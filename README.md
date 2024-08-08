@@ -1,1 +1,1 @@
-# added resource for datd analytics
+# added resource for data analytics
