@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus -->
+<html lang="en" style="--mobile-announcement-separator-width: 1px; --app-height: 634px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><img src="./Top 35 Git Commands With Examples - DZone_files/pixel.gif" width="1" height="1" alt="" role="presentation" style="margin-left: -9999px; position: absolute !important; bottom: 0px !important; left: 0px !important;"><img src="./Top 35 Git Commands With Examples - DZone_files/pixel(1).gif" width="1" height="1" alt="" role="presentation" style="margin-left: -9999px; position: absolute !important; bottom: 0px !important; left: 0px !important;"><img src="./Top 35 Git Commands With Examples - DZone_files/pixel(2).gif" width="1" height="1" alt="" role="presentation" style="margin-left: -9999px; position: absolute !important; bottom: 0px !important; left: 0px !important;"><img src="./Top 35 Git Commands With Examples - DZone_files/pixel(3).gif" width="1" height="1" alt="" role="presentation" style="margin-left: -9999px; position: absolute !important; bottom: 0px !important; left: 0px !important;"><img src="./Top 35 Git Commands With Examples - DZone_files/pixel(4).gif" width="1" height="1" alt="" role="presentation" style="margin-left: -9999px; position: absolute !important; bottom: 0px !important; left: 0px !important;"><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/analytics.js.download"></script><script src="./Top 35 Git Commands With Examples - DZone_files/up_loader.1.1.0.js.download" async=""></script><script src="./Top 35 Git Commands With Examples - DZone_files/data.js.download" async=""></script><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/formcomplete.js.download"></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/clarity.js.download"></script><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/6si.min.js.download"></script><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/tag.aspx"></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/l7xu65at89"></script><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/tag.aspx"></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/dyr9vdlv8t"></script><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/js"></script><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/js(1)"></script><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/js(2)"></script>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Git commands are essential, and they help to manage your source code effectively. In this guide, you will learn Git commands from Beginners to Advanced level.">
+  <meta name="keywords" content="Git, command, branch, commit">
+
+  <meta property="og:description" content="Git commands are essential, and they help to manage your source code effectively. In this guide, you will learn Git commands from Beginners to Advanced level.">
+  <meta property="og:site_name" content="dzone.com">
+  <meta property="og:title" content="Top 35 Git Commands With Examples - DZone">
+  <meta property="og:url" content="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus">
+  <meta property="og:image" content="https://dz2cdn1.dzone.com/storage/article-thumb/14724579-thumb.jpg">
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:site" content="@DZoneInc">
+  <meta name="twitter:image" content="https://dz2cdn1.dzone.com/storage/article-thumb/14724579-thumb.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Git commands are essential, and they help to manage your source code effectively. In this guide, you will learn Git commands from Beginners to Advanced level.">
+  <meta name="twitter:title" content="Top 35 Git Commands With Examples - DZone">
+
+
+  <meta name="referrer" content="origin-when-cross-origin">
+  <meta name="google-site-verification" content="kndbhxcupfEqWmZclhCpB6vlgOs7QSmx2UHAGGnP2mA">
+  <meta name="df-verify" content="df0d76632b4543">
+
+  <link rel="icon" type="image/x-icon" href="https://dz2cdn1.dzone.com/themes/dz20/images/favicon.png">
+  <link rel="image_src" href="https://dz2cdn1.dzone.com/storage/article-thumb/14724579-thumb.jpg">
+  <link rel="canonical" href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus">
+
+  <title>Top 35 Git Commands With Examples - DZone</title>
+
+  <link rel="preload" href="https://dz2cdn1.dzone.com/themes/dz20/font/fontello.woff?11773374" as="font" type="font/woff" crossorigin="anonymous">
+
+  <link rel="stylesheet" media="all" href="./Top 35 Git Commands With Examples - DZone_files/icons.css">
+  <link rel="stylesheet" media="all" href="./Top 35 Git Commands With Examples - DZone_files/bootstrap.min.css">
+  <link rel="stylesheet" media="all" href="./Top 35 Git Commands With Examples - DZone_files/global.css">
+  <link rel="stylesheet" media="all" href="./Top 35 Git Commands With Examples - DZone_files/styles.css">
+  <script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/linkid.js.download"></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/get"></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/tag(1).aspx"></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/gtm.js.download"></script><script defer="" src="./Top 35 Git Commands With Examples - DZone_files/cdn.min.js.download"></script>
+<meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./Top 35 Git Commands With Examples - DZone_files/f(1).txt" async=""></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/5055"></script><style id="_6si-shortening">/* This stylesheet is created by 6sense */
+            .mktoForm .mktoFormRow:has(._6si_sff_filled) {
+                display: none;
+            }
+            .mktoForm .mktoFormRow ._6si_sff_filled {
+                display: none;
+            }
+            .hs-form .hs-form-field:has(._6si_sff_filled) {
+                display: none;
+            }
+            .hs-form .hs-form-field ._6si_sff_filled {
+                display: none;
+            }
+            form.form .form-field:not(.error):has(._6si_sff_filled) {
+                display: none;
+            }
+            form.form .form-field:not(.error) ._6si_sff_filled {
+                display: none;
+            }
+            .elq-form .row:has(._6si_sff_filled) {
+                display: none;
+            }
+            .elq-form .row ._6si_sff_filled {
+                display: none;
+            }
+            .elq-form .field-wrapper:has(._6si_sff_filled) {
+                display: none;
+            }
+            .elq-form .field-wrapper ._6si_sff_filled {
+                display: none;
+            }</style><script async="" src="./Top 35 Git Commands With Examples - DZone_files/AGSKWxVb89dH9wefG6NhzLQkH4Tu3ROel428pz4FFG_XYUWfZ4KjLgogOhbOkT3Vr0D_mNyJFlG47OpKjazJ7qr3ydvToYGqwzYRsCRwLNwS0F8ChA92k5g8QjoGQpWP3ygN8UQeqp1Fqg=="></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/AGSKWxVL-n3uc5DFSkLKObS9Z4lxkTaqXBlKzN1m_KJEDlPrfLZHf6PY6vvhixKs56zU1gCZNFAoQc49X5OGjptBITQNLRi5o_cYsiDoaiUqYe6KcJub7_5NPqwSfOy2cC2vrW-2-qsfaw=="></script><link rel="stylesheet" href="./Top 35 Git Commands With Examples - DZone_files/codemirror.css"><link rel="stylesheet" href="./Top 35 Git Commands With Examples - DZone_files/styles(1).css"><link rel="stylesheet" href="./Top 35 Git Commands With Examples - DZone_files/froala_editor.pkgd.min.css"><link rel="stylesheet" href="./Top 35 Git Commands With Examples - DZone_files/gray.min.css"><link rel="stylesheet" href="./Top 35 Git Commands With Examples - DZone_files/mini-profile.css"><script src="./Top 35 Git Commands With Examples - DZone_files/lazysizes.min.js.download"></script><script id="omapi-script" src="./Top 35 Git Commands With Examples - DZone_files/api.min.js.download" async=""></script><script src="./Top 35 Git Commands With Examples - DZone_files/codeblocks.js.download"></script><link rel="stylesheet" href="./Top 35 Git Commands With Examples - DZone_files/api.min.css" id="omapi-css" media="all"><script src="./Top 35 Git Commands With Examples - DZone_files/activity-bar.js.download"></script><script src="./Top 35 Git Commands With Examples - DZone_files/froala_editor.pkgd.min.js.download"></script><script src="./Top 35 Git Commands With Examples - DZone_files/content.js.download"></script><script src="./Top 35 Git Commands With Examples - DZone_files/content(1).js.download"></script><script src="./Top 35 Git Commands With Examples - DZone_files/content(2).js.download"></script><script async="" src="./Top 35 Git Commands With Examples - DZone_files/AGSKWxUp64JnqHubsC90xekygqTc3CneJAZKp5JpmgXIKjH0knKgIJuC548FeVNDqL5pPUbuhG0kiO0V_5DlYR4kbjYjHoMIIaoO_kiKRLaR7gv0qF5oYHVOSTKA5YB9dgrlRRVuGvvf5g=="></script></head>
+<body class="skybox-auto-collapse" style="overflow-y: auto;">
+    <div class="skybox skybox-closeBtn" data-gpt-slot="skybox" id="div-gpt-ad-1435246566686-99" data-google-query-id="CNiuhcCz5IcDFUNNCAQdwqU0hw" style="display: none;"><div id="google_ads_iframe_/5055/dz_skybox_0__container__" style="border: 0pt none; width: 5px; height: 5px;"></div></div>
+<header id="ftl-header">
+    <div class="header-top">
+<div class="header-container">
+    <div class="pull-left logo-container">
+        <div class="logo">
+            <a class="inner" href="https://dzone.com/">
+                <picture>
+                    <source srcset="https://dz2cdn1.dzone.com/themes/dz20/images/dz_logo_2021_cropped.webp" type="image/webp">
+                    <source srcset="https://dz2cdn1.dzone.com/themes/dz20/images/dz_logo_2021_cropped.png" type="image/png">
+                    <img src="./Top 35 Git Commands With Examples - DZone_files/dz_logo_2021_cropped.png" width="181" height="56" alt="DZone">
+                </picture>
+            </a>
+        </div>
+    </div>
+
+    <div class="pull-right login-and-search">
+        <div id="authenticated-block" class="logged-in">
+            <div class="welcome-back">Thanks for visiting DZone today,</div>
+            <div id="user-header" class="user-info">
+                <button class="user-avatar">
+                    <span id="header-username" class="username"></span>
+                    <img id="header-avatar" src="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus" alt="user avatar">
+                </button>
+                <div id="user-dropdown" class="browse-user-menu">
+                    <div class="user-content">
+                        <a id="header-user-plug" href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus#" class="user-description"></a>
+                        <a id="header-user-edit" href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus#" class="edit-profile">Edit Profile</a>
+                    </div>
+                    <ul class="user-actions">
+                        <li id="first-user-action"><a id="header-dropdown-manage-email" href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus#">Manage Email Subscriptions</a></li>
+                        <li>
+                            <a href="https://dzone.com/articles/how-to-submit-a-post-to-dzone?utm_source=DZone&amp;utm_medium=user_dropdown&amp;utm_campaign=how_to_post">
+                                How to Post to DZone
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dzone.com/articles/dzones-article-submission-guidelines">
+                                Article Submission Guidelines
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="bottom">
+                        <a href="https://dzone.com/users/logout.html" class="sign-out">Sign Out</a>
+                        <a id="dropdown-view-profile" href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus#" class="view-profile">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <button id="post-button" class="post-content--button">
+                    <span class="post-class">Post</span>
+                    <i class="icon-plus"></i>
+                </button>
+
+                <div id="post-menu" class="posting-links">
+                    <div class="posting-links-menu">
+                        <ul>
+                            <li>
+                                <img src="./Top 35 Git Commands With Examples - DZone_files/dz-postarticle.svg" width="15" height="18" style="width: 15px; height: 18px;">
+                                <a href="https://dzone.com/content/article/post.html">Post an Article</a>
+                            </li>
+                            <li>
+                                <a id="drafts-link" href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus#">Manage My Drafts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="unauthenticated-block" class="shown">
+            <div class="dz-intro">Over 2 million developers have joined DZone.</div>
+            <div class="mobile-invisible sign-in-join">
+                <a href="https://dzone.com/users/login.html">Log In</a>
+                <span class="dz-intro-span">/</span>
+                <a href="https://dzone.com/static/registration.html">Join</a>
+            </div>
+            <a class="join-icon" href="https://dzone.com/users/login.html"><i class="icon-user"></i></a>
+        </div>
+
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.data('searchDrawer', () => ({
+                    open: false,
+                    query: '',
+                    results: [],
+                    resultCount: 0,
+                    noResults: false,
+                    minCharsMet: false,
+                    searching: false,
+
+                    toggleVisibility() {
+                        this.open = !this.open;
+                        if (this.open) {
+                            this.$nextTick(() => {
+                                this.$refs.query.focus();
+                            });
+                        }
+                    },
+
+                    reset(noResults) {
+                        this.results = [];
+                        this.resultCount = 0;
+                        this.noResults = noResults;
+                    },
+
+                    searchContent() {
+                        if (!this.query || !this.query.length || this.query.length < 3) {
+                            this.reset(false);
+                            this.minCharsMet = false;
+                            return;
+                        }
+                        this.minCharsMet = true;
+                        this.searching = true;
+                        localStorage.setItem('ls.searchValue', this.query);
+                        fetch('/services/widget/header-headerV2/nextPage?pageSize=3&term=' + this.query, {
+                            method: 'GET'
+                        }).then(res => {
+                            this.searching = false;
+                            if (res.ok) {
+                                return res.json();
+                            }
+                            throw new Error('Unexpected response');
+                        }).then(data => {
+                            const results = [];
+                            if (data.result && data.result.data && data.result.data.pages && data.result.data.pages.newest) {
+                                for (let r of data.result.data.pages.newest[1]) {
+                                    results.push({
+                                        title: r.title,
+                                        url: r.url,
+                                        thumbnail: isNaN(r.thumb) ? r.thumb : '/thumbnail?fid=' + r.thumb + '&w=80',
+                                        type: r.type,
+                                        date: new Date(r.articleDate).toLocaleDateString(),
+                                        author: {
+                                            name: r.authors[0].realName,
+                                            url: r.authors[0].url
+                                        }
+                                    });
+                                }
+                            }
+                            this.results = results;
+                            this.resultCount = results.length + (results.length === 1 ? ' result' : ' results');
+                            this.noResults = !results.length;
+                        }).catch(error => {
+                            console.error(error);
+                            this.reset(true);
+                        });
+                    }
+                }));
+            });
+        </script>
+
+        <div class="headerSearch" x-data="searchDrawer()">
+            <button class="icon-search dropdown-toggle" x-on:click="toggleVisibility()" fdprocessedid="fzv6t"></button>
+            <template x-teleport=".header-container" data-teleport-template="true"></template>
+        </div>
+    </div>
+<div id="search-drawer" x-show="open" x-on:click.outside="open = false" x-transition="" data-teleport-target="true" style="display: none;">
+                    <div class="search-input">
+                        <input type="text" placeholder="Search" autofocus="autofocus" x-model="query" x-ref="query" x-on:input.change.debounce.500ms="searchContent()">
+                        <button x-on:click="searchContent()" x-bind:disabled="searching">
+                            <span x-show="!searching">Search</span>
+                            <i class="icon icon-spin3 ml-sm anim-spin" x-show="searching" style="display: none;"></i>
+                        </button>
+                    </div>
+                    <div class="search-results">
+                        <ul x-show="results.length" style="display: none;">
+                            <template x-for="r in results"></template>
+                        </ul>
+                        <div class="no-results" x-show="!minCharsMet">
+                            Please enter at least three characters to search
+                        </div>
+                        <div class="no-results" x-show="noResults &amp;&amp; minCharsMet" style="display: none;">
+                            No search results
+                        </div>
+                    </div>
+                    <div class="search-footer" x-show="results.length" style="display: none;">
+                        <div class="left" x-text="resultCount">0</div>
+                        <div class="right">
+                            <a href="https://dzone.com/search">View All Results</a>
+                        </div>
+                    </div>
+                </div></div>    </div>
+    <div class="header-bottom">
+        <div class="header-bottom-container">
+            <a class="resource-link" href="https://dzone.com/refcardz">Refcards</a>
+            <a class="resource-link" href="https://dzone.com/trendreports">Trend Reports</a>
+            <div class="resource-link link-menu">
+                <a href="https://dzone.com/events">Events</a>
+                <a href="https://dzone.com/events/video-library">Video Library</a>
+            </div>
+        </div>
+    </div>
+    <nav class="header-menu-bar">
+        <div class="header-menu resource-category">
+            <a href="https://dzone.com/refcardz">Refcards</a>
+        </div>
+        <div class="header-menu-separator resource-category-separator"></div>
+        <div class="header-menu resource-category">
+            <a href="https://dzone.com/trendreports">Trend Reports</a>
+        </div>
+        <div class="header-menu-separator resource-category-separator"></div>
+        <div class="header-menu resource-category no-bottom-radius" tabindex="1" data-click-activation="">
+            <p class="menu-label">Events</p>
+            <div class="header-menu-items" style="display: none;">
+                <div class="header-menu-columns">
+                    <a class="header-menu-item" href="https://dzone.com/events">View Events</a>
+                    <a class="header-menu-item" href="https://dzone.com/events/video-library">Video Library</a>
+                </div>
+            </div>
+        </div>
+            <div class="header-menu zone-menu" tabindex="1" data-click-activation="">
+                <p class="menu-label">Zones <i class="icon-down-dir icon-closed"></i><i class="icon-right-dir icon-open"></i></p>
+                <div class="header-menu-items" style="display: none;">
+                    <div class="header-menu-columns">
+                            <div class="header-menu-column-item">
+                                <a class="header-menu-item" href="https://dzone.com/culture-and-methodologies">Culture and Methodologies</a>
+                                        <a class="header-menu-item" href="https://dzone.com/agile">Agile</a>
+                                        <a class="header-menu-item" href="https://dzone.com/career-development">Career Development</a>
+                                        <a class="header-menu-item" href="https://dzone.com/methodologies">Methodologies</a>
+                                        <a class="header-menu-item" href="https://dzone.com/team-management">Team Management</a>
+                            </div>
+                            <div class="header-menu-column-item">
+                                <a class="header-menu-item" href="https://dzone.com/data-engineering">Data Engineering</a>
+                                        <a class="header-menu-item" href="https://dzone.com/ai-ml">AI/ML</a>
+                                        <a class="header-menu-item" href="https://dzone.com/big-data">Big Data</a>
+                                        <a class="header-menu-item" href="https://dzone.com/data">Data</a>
+                                        <a class="header-menu-item" href="https://dzone.com/databases">Databases</a>
+                                        <a class="header-menu-item" href="https://dzone.com/iot">IoT</a>
+                            </div>
+                            <div class="header-menu-column-item">
+                                <a class="header-menu-item" href="https://dzone.com/software-design-and-architecture">Software Design and Architecture</a>
+                                        <a class="header-menu-item" href="https://dzone.com/cloud-architecture">Cloud Architecture</a>
+                                        <a class="header-menu-item" href="https://dzone.com/containers">Containers</a>
+                                        <a class="header-menu-item" href="https://dzone.com/integration">Integration</a>
+                                        <a class="header-menu-item" href="https://dzone.com/microservices">Microservices</a>
+                                        <a class="header-menu-item" href="https://dzone.com/performance">Performance</a>
+                                        <a class="header-menu-item" href="https://dzone.com/security">Security</a>
+                            </div>
+                            <div class="header-menu-column-item">
+                                <a class="header-menu-item" href="https://dzone.com/coding">Coding</a>
+                                        <a class="header-menu-item" href="https://dzone.com/frameworks">Frameworks</a>
+                                        <a class="header-menu-item" href="https://dzone.com/java">Java</a>
+                                        <a class="header-menu-item" href="https://dzone.com/javascript">JavaScript</a>
+                                        <a class="header-menu-item" href="https://dzone.com/languages">Languages</a>
+                                        <a class="header-menu-item" href="https://dzone.com/tools">Tools</a>
+                            </div>
+                            <div class="header-menu-column-item">
+                                <a class="header-menu-item" href="https://dzone.com/testing-deployment-and-maintenance">Testing, Deployment, and Maintenance</a>
+                                        <a class="header-menu-item" href="https://dzone.com/deployment">Deployment</a>
+                                        <a class="header-menu-item" href="https://dzone.com/devops-and-cicd">DevOps and CI/CD</a>
+                                        <a class="header-menu-item" href="https://dzone.com/maintenance">Maintenance</a>
+                                        <a class="header-menu-item" href="https://dzone.com/monitoring-and-observability">Monitoring and Observability</a>
+                                        <a class="header-menu-item" href="https://dzone.com/testing-tools-and-frameworks">Testing, Tools, and Frameworks</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                <div class="header-menu parent-category" tabindex="1">
+                    <a href="https://dzone.com/culture-and-methodologies">Culture and Methodologies</a>
+                    <div class="header-menu-items" style="display: none;">
+                                <a class="header-menu-item" href="https://dzone.com/agile">Agile</a>
+                                <a class="header-menu-item" href="https://dzone.com/career-development">Career Development</a>
+                                <a class="header-menu-item" href="https://dzone.com/methodologies">Methodologies</a>
+                                <a class="header-menu-item" href="https://dzone.com/team-management">Team Management</a>
+                    </div>
+                </div>
+                <div class="header-menu-separator parent-category-separator"></div>
+                <div class="header-menu parent-category" tabindex="2">
+                    <a href="https://dzone.com/data-engineering">Data Engineering</a>
+                    <div class="header-menu-items" style="display: none;">
+                                <a class="header-menu-item" href="https://dzone.com/ai-ml">AI/ML</a>
+                                <a class="header-menu-item" href="https://dzone.com/big-data">Big Data</a>
+                                <a class="header-menu-item" href="https://dzone.com/data">Data</a>
+                                <a class="header-menu-item" href="https://dzone.com/databases">Databases</a>
+                                <a class="header-menu-item" href="https://dzone.com/iot">IoT</a>
+                    </div>
+                </div>
+                <div class="header-menu-separator parent-category-separator"></div>
+                <div class="header-menu parent-category" tabindex="3">
+                    <a href="https://dzone.com/software-design-and-architecture">Software Design and Architecture</a>
+                    <div class="header-menu-items" style="display: none;">
+                                <a class="header-menu-item" href="https://dzone.com/cloud-architecture">Cloud Architecture</a>
+                                <a class="header-menu-item" href="https://dzone.com/containers">Containers</a>
+                                <a class="header-menu-item" href="https://dzone.com/integration">Integration</a>
+                                <a class="header-menu-item" href="https://dzone.com/microservices">Microservices</a>
+                                <a class="header-menu-item" href="https://dzone.com/performance">Performance</a>
+                                <a class="header-menu-item" href="https://dzone.com/security">Security</a>
+                    </div>
+                </div>
+                <div class="header-menu-separator parent-category-separator"></div>
+                <div class="header-menu parent-category" tabindex="4">
+                    <a href="https://dzone.com/coding">Coding</a>
+                    <div class="header-menu-items" style="display: none;">
+                                <a class="header-menu-item" href="https://dzone.com/frameworks">Frameworks</a>
+                                <a class="header-menu-item" href="https://dzone.com/java">Java</a>
+                                <a class="header-menu-item" href="https://dzone.com/javascript">JavaScript</a>
+                                <a class="header-menu-item" href="https://dzone.com/languages">Languages</a>
+                                <a class="header-menu-item" href="https://dzone.com/tools">Tools</a>
+                    </div>
+                </div>
+                <div class="header-menu-separator parent-category-separator"></div>
+                <div class="header-menu parent-category" tabindex="5">
+                    <a href="https://dzone.com/testing-deployment-and-maintenance">Testing, Deployment, and Maintenance</a>
+                    <div class="header-menu-items" style="display: none;">
+                                <a class="header-menu-item" href="https://dzone.com/deployment">Deployment</a>
+                                <a class="header-menu-item" href="https://dzone.com/devops-and-cicd">DevOps and CI/CD</a>
+                                <a class="header-menu-item" href="https://dzone.com/maintenance">Maintenance</a>
+                                <a class="header-menu-item" href="https://dzone.com/monitoring-and-observability">Monitoring and Observability</a>
+                                <a class="header-menu-item" href="https://dzone.com/testing-tools-and-frameworks">Testing, Tools, and Frameworks</a>
+                    </div>
+                </div>
+                <div class="header-menu-separator parent-category-separator"></div>
+    </nav>
+</header>
+
+<script>
+    const csrf = {
+        parameter: 'TH_CSRF',
+        header: 'X-TH-CSRF',
+        token: '-8618870963128648647'
+    }; // set csrf for auth-status script
+</script>
+<script>
+addEventListener('DOMContentLoaded', function() {
+    handleRedirects();
+    handleMenus();
+    // handleSearch(); // re-enable when we move to new top header
+    handleMobileMenuHeights();
+    handleGotoLinks();
+});
+
+function isHidden(element) {
+    try {
+        return window.getComputedStyle(element).display === 'none';
+    } catch (_) {
+        return false;
+    }
+}
+
+function getLink(element) {
+    if (element.hasAttribute('data-goto')) {
+        return element.getAttribute('data-goto');
+    }
+    return element.href;
+}
+
+function isLeftClick(event) {
+    if (event.altKey || event.shiftKey) {
+        return false;
+    } else if ('buttons' in event || 'which' in event) {
+        return event.buttons === 1 || event.which === 1;
+    } else {
+        return (event.button === 1 || (event.type === 'click'));
+    }
+}
+
+function handleRedirects() {
+    const redirections = [...document.querySelectorAll('[data-activate-menu]'), ...document.querySelectorAll('[data-click-target]')];
+
+    redirections.forEach(function(element) {
+        const menuSelector = element.getAttribute('data-activate-menu') || element.getAttribute('data-click-target');
+        const redirectingElement = document.querySelector(menuSelector);
+        if (redirectingElement) {
+            element.style.cursor = 'pointer';
+            const redirect = function(e) {
+                if (redirectingElement.hasAttribute('href') || redirectingElement.hasAttribute('data-goto')) {
+                    if (redirectingElement.hasAttribute('data-new-window') || e.ctrlKey || e.metaKey) {
+                        window.open(getLink(redirectingElement), '_blank');
+                    } else {
+                        window.open(getLink(redirectingElement), '_self');
+                    }
+                } else {
+                    const evt = new e.constructor(e.type, e);
+                    redirectingElement.dispatchEvent(evt);
+                }
+            };
+            element.addEventListener('mouseup', redirect);
+            element.addEventListener('mousedown', (e) => e.preventDefault());
+            element.addEventListener('click', (e) => e.preventDefault());
+        }
+    });
+}
+
+function handleMenus() {
+    const menuElements = [
+        ...document.querySelectorAll('.header-menu > a'),
+        ...document.querySelectorAll('.header-menu > p.menu-label')
+    ];
+
+    let scrollYMemory = -1;
+
+    function scrollToMemory() {
+        if (scrollYMemory !== -1) {
+            setTimeout(function() {
+                window.scrollTo(0, scrollYMemory);
+                scrollYMemory = -1;
+            }, 10);
+        }
+    }
+
+    function hideMenus() {
+        // unfocus menus & items, and set the menus to non-visible.
+        menuElements.forEach(function (element) {
+            element.blur();
+            element.parentElement.blur();
+            element.parentElement.classList.remove('menu-opened');
+            const menuItems = element.parentElement.querySelector('.header-menu-items');
+            if (menuItems) {
+                menuItems.style.display = 'none';
+            }
+        });
+        const wasHidden = document.body.style.overflowY === 'hidden';
+        document.body.style.overflowY = 'auto';
+        if (wasHidden) {
+            scrollToMemory();
+        }
+    }
+
+    function isEventOutsideMenu(e) {
+        return e.target.closest && !e.target.closest('.header-menu') && !e.target.closest('[data-activate-menu]');
+    }
+
+    // Handle mobile menu toggling
+    menuElements.forEach(function(element) {
+        const menu = element.parentElement;
+        const headerItems = menu.querySelector('.header-menu-items');
+        const menuEntries = headerItems ? headerItems.querySelectorAll('.header-menu-item') : [];
+
+        const focus = function() {
+            menu.focus();
+            menu.classList.add('menu-opened');
+            if (headerItems) {
+                headerItems.style.display = 'block';
+            }
+            if (menu.classList.contains('zone-menu')) {
+                scrollYMemory = window.scrollY;
+                document.body.style.overflowY = 'hidden';
+            } else {
+                scrollYMemory = -1;
+            }
+        };
+
+        const unfocus = function() {
+            menu.blur();
+            menu.classList.remove('menu-opened');
+            if (headerItems) {
+                headerItems.style.display = 'none';
+            }
+            const wasHidden = document.body.style.overflowY === 'hidden';
+            document.body.style.overflowY = 'auto';
+            if (wasHidden) {
+                scrollToMemory();
+            }
+        };
+
+        const toggleMenuVisibility = function(e) {
+            if ((e.type === 'click' || e.type === 'mouseup') && !isLeftClick(e)) {
+                e.preventDefault();
+                return;
+            }
+            const hidden = isHidden(headerItems);
+            if (menu.hasAttribute('data-click-activation')) { // handle click activated toggling
+                if (hidden) {
+                    hideMenus(); // hide other open menus first
+                    focus();
+                } else {
+                    unfocus();
+                }
+                e.preventDefault();
+            } else if (hidden) {
+                hideMenus(); // hide other open menus first
+                focus();
+                e.preventDefault(); // prevent 'click' event from firing when menu is hidden
+            }
+        };
+
+        element.addEventListener('touchend', toggleMenuVisibility);
+        element.addEventListener('mouseup', toggleMenuVisibility);
+
+        // Add hover events to non-click-activated menus, even though CSS should cover it.
+        if (!menu.hasAttribute('data-click-activation')) {
+            menu.addEventListener('mouseover', function () {
+                hideMenus(); // hide other open menus first
+                focus();
+            });
+
+            menu.addEventListener('mouseout', function (e) {
+                if (isEventOutsideMenu(e)) {
+                    unfocus();
+                }
+            });
+        }
+
+        // Hide menu when child is clicked
+        menuEntries.forEach(function(menuEntry) {
+            const linkToItem = function(e) {
+                if (e.type === 'mousedown' || e.type === 'click') {
+                    e.preventDefault();
+                    return;
+                }
+                if (e.type === 'mouseup' && !isLeftClick(e)) {
+                    e.preventDefault();
+                    return;
+                }
+                window.open(getLink(menuEntry), (e.ctrlKey || e.metaKey) ? '_blank' : (menuEntry.target || '_self'));
+                unfocus();
+                e.preventDefault();
+            };
+
+            const linkToMobileItem = function(e) {
+                if (e.type === 'touchstart') {
+                    menuEntry.setAttribute('data-touchmove', false);
+                } else if (e.type === 'touchmove') {
+                    menuEntry.setAttribute('data-touchmove', true);
+                } else if (e.type === 'touchend' && (!menuEntry.hasAttribute('data-touchmove') || menuEntry.getAttribute('data-touchmove').toLowerCase() === 'false')) {
+                    window.open(getLink(menuEntry), (e.ctrlKey || e.metaKey) ? '_blank' : (menuEntry.target || '_self'));
+                    unfocus();
+                    e.preventDefault();
+                }
+            };
+
+            menuEntry.addEventListener('mousedown', linkToItem);
+            menuEntry.addEventListener('mouseup', linkToItem);
+            menuEntry.addEventListener('click', linkToItem);
+            menuEntry.addEventListener('touchstart', linkToMobileItem);
+            menuEntry.addEventListener('touchmove', linkToMobileItem);
+            menuEntry.addEventListener('touchend', linkToMobileItem);
+        });
+    });
+
+    function hideIfNonMenuBounds(e) {
+        if (isEventOutsideMenu(e)) {
+            hideMenus();
+        }
+    }
+
+    addEventListener('mousemove', hideIfNonMenuBounds);
+    addEventListener('touchend', hideIfNonMenuBounds);
+    addEventListener('mouseup', hideIfNonMenuBounds);
+    addEventListener('mousedown', hideIfNonMenuBounds);
+    addEventListener('click', hideIfNonMenuBounds);
+}
+
+function handleSearch() {
+    const userBlock = document.querySelector('#ftl-header .header-top .user-block');
+    const loginBlock = document.querySelector('#ftl-header .header-top .user-login');
+    const searchBtn = document.querySelector('#header-search-button');
+    const searchInput = document.querySelector('#header-search-input');
+
+    function showSearch() {
+        userBlock.style.opacity = 0;
+        loginBlock.style.opacity = 0;
+        setTimeout(function() {
+            userBlock.classList.add('hidden');
+            loginBlock.classList.add('hidden');
+            searchInput.value = '';
+            searchInput.style.display = 'unset';
+            setTimeout(function () {
+                searchInput.style.width = '300px';
+                searchInput.focus();
+            });
+        }, 300);
+    }
+
+    function hideSearch() {
+        searchInput.value = '';
+        searchInput.style.width = '0';
+        setTimeout(function() {
+            searchInput.style.display = 'none';
+            userBlock.classList.remove('hidden');
+            loginBlock.classList.remove('hidden');
+            setTimeout(function() {
+                userBlock.style.opacity = 1;
+                loginBlock.style.opacity = 1;
+            }, 100);
+        }, 250);
+    }
+
+    function doSearch() {
+        if (!searchInput || !searchInput.value.length) { // hide search if no content
+            hideSearch();
+        } else if (localStorage) { // execute search
+            localStorage.setItem('ls.searchValue', searchInput.value);
+            window.location = '/search';
+        }
+    }
+
+    function searchClick(e) {
+        if ((e.type === 'click' || e.type === 'mouseup') && !isLeftClick(e)) {
+            e.preventDefault();
+            return;
+        }
+        if (isHidden(searchInput)) { // show search on click when hidden
+            showSearch();
+        } else if (searchInput.value && searchInput.value.length) { // search on click with content
+            doSearch();
+        } else { // hide on click without content
+            hideSearch();
+        }
+    }
+
+    if (searchBtn) {
+        searchBtn.addEventListener('touchend', searchClick);
+        searchBtn.addEventListener('mouseup', searchClick);
+    }
+
+    // Search on enter
+    if (searchInput) {
+        searchInput.addEventListener('keyup', function (e) {
+            if (e.keyCode === 13 || e.code === 'Enter') {
+                doSearch();
+            }
+        });
+    }
+}
+
+function handleMobileMenuHeights() {
+    function setAppHeight() {
+        document.documentElement.style.setProperty('--app-height', window.innerHeight + 'px');
+    }
+
+    addEventListener('resize', function() {
+        setAppHeight();
+    });
+
+    setAppHeight();
+}
+
+function handleGotoLinks() {
+    // Add anchor mimicking to elements with data-goto attributes
+    // This addresses SEO concerns of linking to noindex pages by allowing JS to handle the URL
+    const anchorElements = document.querySelectorAll('*[data-goto]');
+    anchorElements.forEach((anchorElement) => {
+        anchorElement.addEventListener('mouseover', () => {
+            anchorElement.style.cursor = 'pointer';
+            anchorElement.style.textDecoration = 'underline';
+        });
+        anchorElement.addEventListener('mouseout', () => {
+            anchorElement.style.cursor = 'unset';
+            anchorElement.style.textDecoration = 'unset';
+        });
+        anchorElement.addEventListener('mouseup', (e) => {
+            e.preventDefault();
+        });
+        anchorElement.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+        });
+        anchorElement.addEventListener('click', (e) => {
+            e.preventDefault();
+            const anchorHref = anchorElement.getAttribute('data-goto');
+            if (anchorElement.hasAttribute('data-new-window') || e.ctrlKey || e.metaKey) {
+                window.open(anchorHref, '_blank');
+            } else {
+                window.open(anchorHref, '_self');
+            }
+        });
+    });
+}
+</script><script>
+const authenticatedBlock = document.querySelector('#authenticated-block');
+const unauthenticatedBlock = document.querySelector('#unauthenticated-block');
+
+let authenticated = {
+    isAuthenticated: false,
+    isAdmin: false
+};
+
+fetch('/services/internal/data/articles-getAuthenticationStatus', {
+    headers: {
+        'Accept': 'application/json'
+    }
+})
+    .then(function (result) {
+        return result.json()
+    })
+    .then(function (result) {
+        const res = result.result.data
+        if (!res.authenticated) {
+            unauthenticatedBlock.classList.add('shown')
+        } else {
+            bindProps('#header-username', null, null, (res.firstName || res.username), null)
+            bindProps('#header-avatar', null, res.avatar, null, null)
+            bindProps('#header-user-plug', res.profileUrl, null, res.realName, null)
+            bindProps('#header-user-edit', '/users/' + res.id + '/edit.html', null, null, null)
+            bindProps('#header-dropdown-manage-email', '/newsletters/' + res.id + '/manage.html', null, null, null)
+            bindProps('#dropdown-view-profile', res.profileUrl, null, null, null)
+            bindProps('#drafts-link', '/users/' + res.id + '/drafts.html', null, null, null)
+
+            if (res.isAdmin) {
+                // Construct backwards so the #after call places elements in the correct order
+                const firstUserAction = document.querySelector('#first-user-action')
+                const adminConsoleItem = document.createElement('li')
+                const adminConsoleLink = createLink('/dzone/staff/index.html', 'Admin Console')
+                adminConsoleItem.appendChild(adminConsoleLink)
+                firstUserAction.after(adminConsoleItem)
+
+                const moderationItem = document.createElement('li')
+                const moderationLink = createLink('/moderation/list.html', 'Moderation')
+                moderationItem.appendChild(moderationLink)
+                firstUserAction.after(moderationItem)
+            }
+
+            authenticated.isAuthenticated = res.authenticated;
+            authenticated.isAdmin = res.isAdmin;
+
+            authenticatedBlock.classList.add('shown')
+        }
+    }).catch(function (result) {
+        console.error(result)
+})
+
+/**
+ * Binds different properties to the selected element.
+ *
+ * @param selector - Selector to select the element
+ * @param href - href attribute value
+ * @param src - src attribute value
+ * @param innerHTML - innerHTML property value
+ * @param innerText - innerText property value
+ */
+function bindProps(selector, href, src, innerHTML, innerText) {
+    const element = document.querySelector(selector)
+    if (element) {
+        if (href) element.href = href
+        if (src) element.src = src
+        if (innerHTML) element.innerHTML = innerHTML
+        if (innerText) element.innerText = innerText
+    }
+}
+
+/**
+ * Creates a new link element.
+ *
+ * @param href - href attribute value
+ * @param innerText - innerText property value
+ * @returns {HTMLAnchorElement} The generated link element
+ */
+function createLink(href, innerText) {
+    const link = document.createElement('a')
+    link.href = href
+    link.innerText = innerText
+
+    return link
+}
+</script><script>
+const userHeader = document.querySelector('#user-header')
+const userDropdown = document.querySelector('#user-dropdown')
+const postDropdown = document.querySelector('#post-button')
+const postMenu = document.querySelector('#post-menu')
+
+let userDropdownOpen = false
+let postDropdownOpen = false
+
+document.addEventListener('click', function(event) {
+    if (postDropdown && postDropdown.contains(event.target)) {
+        setUserDropdown(false)
+        setPostDropdown(!postDropdownOpen)
+    } else if (userHeader && userHeader.contains(event.target)) {
+        setPostDropdown(false)
+        setUserDropdown(!userDropdownOpen)
+    } else {
+        setUserDropdown(false)
+        setPostDropdown(false)
+    }
+})
+
+function setUserDropdown(value) {
+    userDropdownOpen = value
+    if (userDropdownOpen) {
+        if (userDropdown) {
+            userDropdown.classList.add('open')
+        }
+    } else {
+        if (userDropdown) {
+            userDropdown.classList.remove('open')
+        }
+    }
+}
+
+function setPostDropdown(value) {
+    postDropdownOpen = value
+    if (postDropdownOpen) {
+        if (postMenu) {
+            postMenu.classList.add('open')
+        }
+    } else {
+        if (postMenu) {
+            postMenu.classList.remove('open')
+        }
+    }
+}
+</script>
+<link rel="stylesheet" media="all" href="./Top 35 Git Commands With Examples - DZone_files/styles(2).css">
+
+
+
+
+<div id="body-container">
+		<div id="announcement-container-outer">
+			<div id="announcement-previous">
+				<i class="icon-angle-left"></i>
+			</div>
+			<div id="announcement-next">
+				<i class="icon-angle-right"></i>
+			</div>
+			<div id="announcement-container" style="flex-direction: row;">
+					<div class="announcement announcement-count-4" data-position="1" style="opacity: 1; display: flex;">
+						<div class="body"><p><strong>Unlock Your Data: </strong>Dive into strategies to democratize data, enable advanced analytics, and ensure data governance and security.</p></div>
+						<div class="spacer"></div>
+						<a href="https://events.dzone.com/dzone/Unlocking-your-Data-Strategies-and-Best-Practices-for-Embedded-Analytics?utm_bmcr_source=announcement_bar" target="_blank">
+							<button fdprocessedid="dfxl4">Register Today</button>
+						</a>
+					</div>
+						<div class="separator"></div>
+					<div class="announcement announcement-count-4" data-position="2" style="opacity: 1; display: flex;">
+						<div class="body"><p><strong>Join the Database Discussion: </strong>Tune in as SMEs discuss DB adoption trends, real-time streaming architectures, AI in DB systems, and more.</p></div>
+						<div class="spacer"></div>
+						<a href="https://events.dzone.com/dzone/Database-Systems-Modernization-for-Data-Driven-Architectures?utm_bmcr_source=Announcementbar" target="_blank">
+							<button fdprocessedid="turnnm">Register Today</button>
+						</a>
+					</div>
+						<div class="separator"></div>
+					<div class="announcement announcement-count-4" data-position="3" style="display: none; opacity: 0;">
+						<div class="body"><p><strong>Database Systems: </strong>In 2024, the focus around databases is on their ability to scale and perform in modern data architectures. See why.</p></div>
+						<div class="spacer"></div>
+						<a href="https://dzone.com/link/2024-tr-database-systems-announcement" target="_self">
+							<button>Download the NEW Trend Report</button>
+						</a>
+					</div>
+						<div class="separator"></div>
+					<div class="announcement announcement-count-4" data-position="4" style="display: none; opacity: 0;">
+						<div class="body"><p><strong>LAST CALL! 2024 K8s Survey:</strong> Share your insights on containers, K8s, and CI/CD (+ enter a $750 raffle!) for our upcoming Trend Report.</p></div>
+						<div class="spacer"></div>
+						<a href="https://survey.alchemer.com/s3/7772684/dzann" target="_blank">
+							<button>Take the Survey</button>
+						</a>
+					</div>
+			</div>
+		</div>
+	<script type="text/javascript" async="">
+(function() {
+    let announcementPosition = 1;
+    let minAnnouncementPosition = -1;
+    let maxAnnouncementPosition = -1;
+
+    const announcementPrevBtn = document.querySelector('#announcement-previous');
+    const announcementNextBtn = document.querySelector('#announcement-next');
+
+    function withAnnouncements(callback) {
+        const announcements = document.querySelectorAll('#announcement-container .announcement');
+        for (let announcement of announcements) {
+            callback(announcement);
+        }
+    }
+
+    function initAnnouncementVars() {
+        document.querySelector(':root').style.setProperty('--mobile-announcement-separator-width', '1px');
+        withAnnouncements(function(announcement) {
+            const pos = parseInt(announcement.getAttribute('data-position'));
+            minAnnouncementPosition = minAnnouncementPosition === -1 ? pos : Math.min(minAnnouncementPosition, pos);
+            maxAnnouncementPosition = maxAnnouncementPosition === -1 ? pos : Math.max(maxAnnouncementPosition, pos);
+        });
+
+        if (document.querySelector('.announcementBarContainer')) {
+            document.querySelector(':root').style.setProperty('--body-top-padding', '0');
+        }
+
+        if (maxAnnouncementPosition <= 0) {
+            document.querySelector(':root').style.setProperty('--body-top-padding', '0');
+        }
+
+        sizeToFullWhenOneEntryOnMobile();
+    }
+
+    function setAnnouncementPosition(position) {
+        if (window.outerWidth >= 890) {
+            return; // we do not need to change the position, since we can display everything on desktop.
+        }
+
+        // Make the announcement cyclical
+        if (minAnnouncementPosition !== -1 && maxAnnouncementPosition !== -1) {
+            if (position > maxAnnouncementPosition) {
+                position = minAnnouncementPosition; // overflow to the first announcement
+            } else if (position < minAnnouncementPosition) {
+                position = maxAnnouncementPosition; // underflow to the last announcement
+            }
+            announcementPosition = position;
+        }
+
+        const shownAnnouncements = [];
+
+        let reverseFlex = false; // should only be true when the first and last items are showing
+
+        // Now that the position is valid, apply the transforms
+        withAnnouncements(function(announcement) {
+            const pos = parseInt(announcement.getAttribute('data-position'));
+            const isWrapped = position === maxAnnouncementPosition && pos === minAnnouncementPosition; // showing first + last at same time
+            const doesNextQualify = window.outerWidth >= 500 && (pos === position + 1 || isWrapped);
+
+            if (pos === position || doesNextQualify) {
+                shownAnnouncements.push(announcement);
+            } else {
+                announcement.style.display = 'none';
+            }
+
+            announcement.style.opacity = 0.0;
+
+            if (isWrapped) {
+                reverseFlex = true;
+            }
+        });
+
+        for (let announcement of shownAnnouncements) {
+            announcement.style.display = 'flex';
+            announcement.style.opacity = 1.0;
+        }
+
+        const announcementContainer = document.querySelector('#announcement-container');
+        if (announcementContainer) {
+            announcementContainer.style.flexDirection = reverseFlex ? 'row-reverse' : 'row';
+        }
+    }
+
+    function resetAnnouncements() {
+        announcementPosition = 1;
+        const announcementContainer = document.querySelector('#announcement-container');
+        if (announcementContainer) {
+            announcementContainer.style.flexDirection = 'row';
+        }
+        withAnnouncements(function(announcement) {
+            announcement.style.opacity = 1.0;
+            announcement.style.display = 'flex';
+        });
+    }
+
+    function sizeToFullWhenOneEntryOnMobile() {
+        if (maxAnnouncementPosition <= 2 && announcementPrevBtn && announcementNextBtn) {
+            announcementPrevBtn.style.display = maxAnnouncementPosition === 2 && window.outerWidth < 500 ? 'flex' : 'none';
+            announcementNextBtn.style.display = maxAnnouncementPosition === 2 && window.outerWidth < 500 ? 'flex' : 'none';
+        }
+        if (maxAnnouncementPosition === 1 && window.outerWidth >= 500 && window.outerWidth < 890) {
+            document.querySelector(':root').style.setProperty('--mobile-announcement-separator-width', '0');
+            document.querySelector('#announcement-container .announcement').style.maxWidth = '100%';
+        }
+    }
+
+    function resetAnnouncementsOnResize() {
+        announcementPosition = 1; // we want to reset the announcement position every resize
+        if (window.outerWidth >= 890) { // 4 announcements can be shown (215px * 4) + separator padding
+            resetAnnouncements();
+        } else { // if we're still on mobile, set the position to normalize things after resize
+            setAnnouncementPosition(announcementPosition);
+            sizeToFullWhenOneEntryOnMobile();
+        }
+    }
+
+    window.addEventListener('resize', resetAnnouncementsOnResize);
+
+    initAnnouncementVars();
+    setAnnouncementPosition(announcementPosition); // sets the min & max positions as well as initializes transforms
+
+    if (announcementPrevBtn) {
+        announcementPrevBtn.onclick = function() {
+            setAnnouncementPosition(announcementPosition - 1);
+        };
+    }
+
+    if (announcementNextBtn) {
+        announcementNextBtn.onclick = function() {
+            setAnnouncementPosition(announcementPosition + 1);
+        };
+    }
+})();	</script>
+  <div id="ftl-article" class="trending-article-body">
+      <div class="trending-sidebar">
+        <div class="trending">
+          <h3>Related</h3>
+          <div class="trending-separator"></div>
+          <ul>
+              <li class="item">
+                <a href="https://dzone.com/articles/git-reset-head" class="related-link">Git Reset HEAD</a>
+              </li>
+              <li class="item">
+                <a href="https://dzone.com/articles/git-basic-terminologies-explained" class="related-link">Git: Basic Terms and Commands Explained</a>
+              </li>
+              <li class="item">
+                <a href="https://dzone.com/articles/developer-git-commit-hygiene-1" class="related-link">Developer Git Commit Hygiene</a>
+              </li>
+              <li class="item">
+                <a href="https://dzone.com/articles/understanding-git" class="related-link">Understanding Git</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    <div class="container-fluid body trending-article-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="articles-wrap">
+                <div class="ad-container">
+                  <div id="div-gpt-ad-1435246566686-0" class="ads-billboard-article" data-gpt-slot="top" data-google-query-id="CM-LhsCz5IcDFXxOCAQdyl8drA"><div id="google_ads_iframe_/5055/dz2_article_billboard_new_0__container__" style="border: 0pt none; display: inline-block; width: 728px; height: 90px;"><iframe frameborder="0" src="./Top 35 Git Commands With Examples - DZone_files/container.html" id="google_ads_iframe_/5055/dz2_article_billboard_new_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="2" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+                </div>
+
+
+            <div class="article-stream widget-top-border">
+                <div class="content-right-images" style="">
+                  <div id="div-gpt-ad-1435246566686-2" class="sidebar-ad" data-gpt-desktop="true" data-gpt-slot="sidebar1"></div>
+                    <div class="trending-separator"></div>
+                    <div class="trending">
+                      <h3>Trending</h3>
+                      <ul>
+                          <li class="item">
+                            <a href="https://dzone.com/articles/go-serverless-unleash-next-gen-computing" class="trending-link" target="_self">Go Serverless: Unleash Next-Gen Computing</a>
+                          </li>
+                          <li class="item">
+                            <a href="https://dzone.com/articles/iot-needs-to-get-serious-about-security" class="trending-link" target="_self">IoT Needs To Get Serious About Security</a>
+                          </li>
+                          <li class="item">
+                            <a href="https://dzone.com/articles/hidden-costs-of-lombok-in-enterprise-java-solutions" class="trending-link" target="_self">The Hidden Costs of Lombok in Enterprise Java Solutions</a>
+                          </li>
+                          <li class="item">
+                            <a href="https://dzone.com/articles/software-testing-errors-to-look-out-for-with-examp" class="trending-link" target="_self">Software Testing Errors To Look Out For (With Examples)</a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+                <script type="application/ld+json">
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "Article",
+                    "headline": "Top 35 Git Commands With Examples",
+                    "author": [{"image":{"@type":"ImageObject","caption":"Rajeev Bera","url":"https://secure.gravatar.com/avatar/aeec859a4b5dac7f177f9763a55c32a5?d=identicon&r=PG"},"@type":"Person","name":"Rajeev Bera","url":"https://dzone.com/authors/acompiler20"}],
+                    "audience": "software developers",
+                    "keywords": "git,git commands,git commands and usage,git tutorial for beginners,git tutorial,git commits",
+                    "timeRequired": "PT8M",
+                    "commentCount": 3,
+                    "wordCount": "1953",
+                    "accessMode": "textual, visual",
+                    "datePublished": "2021-05-09T00:00:00Z",
+                    
+                    "articleSection": "devops-tutorials-tools-news",
+                    "publisher": {
+                      "@type": "Organization",
+                      "name": "DZone",
+                      "url": "https://dzone.com",
+                      "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://dzone.com/themes/dz20/images/dz_logo_2021_cropped.png"
+                      }
+                    },
+                    "articleBody": "If you are a new or experienced developer, you have to use source control. And good chances are you are using Git to manage your source code. And to use Git to its full potential, you need to know Git commands. Here you will learn the most helpful Git commands that will take you from one level to another. To make this Git commands guide more helpful, I have divided the guide into three different sections: Basic, Intermediate, and Advanced Git commands. This is an epic guide. And to make it more useful, I have added a Bonus section where you can download 51+ Git commands and a few more downloads to boost your productivity in Git. Basic Git Commands In this section, you will learn the essential Git commands. These basic Git commands are the foundation to learn more advanced commands. Here are the nine useful Git commands. 1. git config Git config command is super helpful. Especially when you are using Git for the first time, or you have a new Git installation. This command will set up your identity - Name and Email address. And this information will be used with every commit. Usage $ git config --global user.name \"Your name\" $ git config --global user.email \"Your email\" 2. git version As its name implies, it's just to check which version of Git you are using. At the moment, writing this guide, the latest version of Git for Windows is 2.31.1. It was released on 27th March 2021. Usage $ git version 3. git init This is probably the first command you use to start a new project in Git. This command will create a blank new repository, and then you can store your source code inside this repo. Usage $ git init Or you can use the repository name with your git init command. $ git init &lt;your repository name&gt; 4. git clone The git clone command will use an existing repository to copy. There is one main difference between the git init and git clone. You will use the Git clone when you need to make a copy on an existing repository. The git clone command internally uses the git init command first and then checks out all its contents. Usage git clone &lt;your project URL&gt; 5. git add The Git add command will add all the new code files or modified files into your repository. This command offers different options to add files and folders. Here is the usage of the Git add command. Usage $ git add your_file_name (it will add a single file to your staging area) $ git add * ( this option will add all the modified and new files to the staging area) 6. git commit This Git command is essential. Your project quality may drop if you will not use this command appropriately. There is another article about how to use Git commands property, and you can read that here. In simple words, the Git commit will add your changes to your local repository. Usage $ git commit -m “your useful commit message” 7. git status This Git command is convenient to see how many files are there which need your attention. You can run this command at any time. You can use it in between Git add, and Git commits to see the status. Usage $ git status 8. git branch Most of the time, you have multiple branches in your Git repository. In simple terms, the branch is an independent line of code development. With the Git branch command, you can manage your branches effectively. There are many different options and switches of the Git branch. To make it simple, here I will highlight how you can create and delete a Git branch (in case you need more depth, you can refer to - Git Branching and Merging section of this article). Usage (i) To list all branches: $ git branch (ii) To create a new branch: $ git branch &lt;branch_name&gt; (iii) To delete a branch: $ git branch -d &lt;branch_name&gt; 9. git checkout This Git command is used to switch between branches. This is one of the powerful git commands and can use used as a swiss knife, In simple words, here is the syntax to switch to another branch. Usage $ git checkout &lt;branch_name&gt; Also, you can create and checkout to a branch in a single like, here is the usage for that $ git checkout -b &lt;your_new_branch_name&gt; Intermediate Level Git Commands After the basic Git commands, it's time to share with you intermediate Git commands; these Git commands are super helpful if you need to collaborate with your team, share your code with others. Also, there are commands like Git log that will help to see the history of previous commits. 10. git remote Git remote command acts like a border, and If you need to connect with the outside world, you have to use the Git remote command. This command will connect your local repository to the remote. Usage $ git remote add &lt;shortname&gt; &lt;url&gt; Example $ git remote add origin https://dev.azure.com/aCompiler/_git/DemoProject 11. git push Once you are connected with the remote repository (with the help of the git remote command), it's time to push your changes to that repository. Usage $ git push -u &lt;short_name&gt; &lt;your_branch_name&gt; Example $ git push -u origin feature_branch You should have origin and upstream set up before you use Git push. And here is the command to set up upstream. Usage $ git push --set-upstream &lt;short_name&gt; &lt;branch_name&gt; Example $ git push --set-upstream origin feature_branch 13. git fetch When you need to download other team members' changes, you have to use git fetch. This command will download all information for commits, refs, etc., so you can review it before applying those changes in your local repository. Usage $ git fetch 14. git pull The Git pull command downloads the content (and not the metadata) and immediately updates your local repository with the latest content. Usage $ git pull &lt;remote_url&gt; 15. git stash This Git command temporarily stores your modified files. You can work in stashed with the following Git command. Usage $ git stash And you can view all of your stashes with the following command $ git stash list And if you need a apply a stash to a branch, simply use apply $ git stash apply 16. git log With the help of the Git log, you can see all the previous commits with the most recent commit appear first. Usage $ git log By default, it will show you all the commits of the currently checked out branch, but you can force it to see all the commits of all the branches with all options. $ git log --all 17. git shortlog The shortlog command shows you a summary from the Git log command. This command is helpful if you are just interested in the short summary. This command is helpful to see who worked on what as it group author with their commits. Usage $ git shortlog 18. git show Compared to the Git log, this command git show will show you details about a specific commit. Usage $ git show &lt;your_commit_hash&gt; 19. git rm Sometimes you need to delete files from your codebase, and in that case, you can use the Git rm command. It can delete tracked files from the index and the working directory. Usage $ git rm &lt;your_file_name&gt; 20. git merge Git merge helps you to integrate changes from two branches into a single branch. Usage $ git merge &lt;branch_name&gt; This command will merge the &lt;branch_name&gt; into your current selected branch. Advanced Level Git Commands And now the time to up one more level. In this section, you will learn the advanced Git commands. These commands will take time and practice. Once you know the basics of these commands, it will be easy to use them every day. 21. git rebase Git rebase similar to the git merge command. It integrates two branches into a single branch with one exception. A git rebase command rewrites the commit history. You should use the Git rebase command when you have multiple private branches to consolidate into a single branch. And it will make the commit history linear. Usage $ git rebase &lt;base&gt; 22. git bisect The Git bisect command helps you to find bad commits. Usage i) To start the git bisect $ git bisect start ii) let git bisect know about a good commit $ git bisect good a123 iii) And let git bisect know about a bad commit $ git bisect bad z123 With Git bisect you can narrow down the broken code within a few minutes. 23. git cherry-pick Git cherry-pick is a helpful command. It's a robust command and allows you to pick any commit from any branch and apply it to any other branch. Usage $ git cherry-pick &lt;commit-hash&gt; Git cherry-pick doesn’t modify the history of a repository; instead, it adds to the history. 24. git archive Git archive command will combine multiple files into a single file. It's like a zip utility, so it means you can extract the archive files to get individual files. Usage $ git archive --format zip HEAD &gt; archive-HEAD.zip It will create a zip archive of the current revision. 25. git pull --rebase Most of the time, you need to do rebase (and no merge) when you use Git pull. In that case, you can use the option Usage $ git pull --rebase It will help you to keep the history clean. Also, you can avoid multiple merges. 26. git blame If you need to examine the content of any file line by line, you need to use git blame. It helps you to determine who made the changes to a file. Usage $ git blame &lt;your_file_name&gt; 27. git tag In Git, tags are helpful, and you can use them to manage the release. You can think of a Git tag like a branch that will not change. It is significantly more important if you are making a public release. Usage $ git tag -a v1.0.0 28. git verify-commit The git verify-commit command will check the gpg signature. GPG or “GNU Privacy Guard” is the tool used in sign files and contains their signatures. Usage $ git verify-commit &lt;commit&gt; 29. git verify-tag In the same way, you can confirm a tag. Usage $ git verify-tag &lt;tag&gt; 30. git diff Most of the time, you need to compare two git files or branches before you commit or push. Here is a handy command to do that. Usage i) to compare the working directory with the local repo: $ git diff HEAD &lt;filename&gt; ii) to compare two branches: $ git diff &lt;source branch&gt; &lt;target branch&gt; 31. git citool Git citool is a graphics alternative of the Git commit. Usage $ git citool Use image from https://acompiler.com/wp-content/uploads/2020/06/git-citool-productivity-tool-768x431.png. 32. git mv To rename a git file. It will accept two arguments, source and target file name. Usage $ git mv &lt;old-file-name&gt; &lt;new-file-name&gt; 33. git clean You can deal with untracked files by using the Git clean command. You can remove all the untracked files from your working directory by using this command. In case you want to deal with tracked files you need to use the Git reset command. Usage $ git clean 34. git help There are many commands in Git, and if you need more help with any command, you can use git help at any time from the terminal. Usage $ git help &lt;git_command&gt; 35. git whatchanged This command does the same thing as git log but in a raw form. And it’s in the git because of historical reasons. Usage $ git whatchanged",
+                    "mainEntityOfPage": {
+                      "@type": "WebPage",
+                      "@id": "https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus"
+                    },
+                    "image": {
+                      "@type": "ImageObject",
+                      "url": "https://dz2cdn1.dzone.com/storage/article-thumb/14724579-thumb.jpg"
+                    }
+                  }
+                </script>
+
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "DZone",
+            "item": "https://dzone.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Testing, Deployment, and Maintenance",
+            "item": "https://dzone.com/testing-deployment-and-maintenance"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Deployment",
+            "item": "https://dzone.com/deployment"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Top 35 Git Commands With Examples",
+            "item": "https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus"
+          }
+      ]
+    }
+
+	</script>
+
+              <article>
+                <div class="content">
+                  <div class="header">
+	<ol class="breadcrumb">
+				<li class="server"><a href="https://dzone.com/">DZone</a></li>
+				<li class="server"><a href="https://dzone.com/testing-deployment-and-maintenance">Testing, Deployment, and Maintenance</a></li>
+				<li class="server"><a href="https://dzone.com/deployment">Deployment</a></li>
+				<li class="active server">Top 35 Git Commands With Examples</li>
+	</ol>
+
+
+                    <div class="header-title">
+                      <div class="title">
+                        <h1 class="article-title">Top 35 Git Commands With Examples</h1>
+                      </div>
+
+                      <div class="subhead">
+                        <h3>Git commands are essential, and they help to manage your source code effectively. In this guide, you will learn Git commands from Beginners to Advanced level.</h3>
+                      </div>
+
+                      <div class="publish-meta">
+                        By<span style="user-select: none;">&nbsp;</span>
+  <div class="article-author-meta">
+    <img src="./Top 35 Git Commands With Examples - DZone_files/thumbnail" class="avatar" alt="Rajeev Bera user avatar" width="40">
+    <div class="author-info">
+      <span class="author-name">
+        <a href="https://dzone.com/authors/acompiler20">Rajeev Bera</a>
+      </span>
+    </div>
+
+
+
+      <span class="badge-container badge-text-md">
+        <img class="author-core-badge" width="18" height="18" alt="DZone Core" src="./Top 35 Git Commands With Examples - DZone_files/dz-core-icon.png" style="margin: 0 0 3px 2px">
+        CORE
+      </span>
+    ·
+  </div>
+                        <span class="author-date">
+                          May. 09, 21
+                        </span>
+                        ·
+                        <span>Tutorial</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="author-n-useraction">
+                    <div class="like action">
+                      <div id="activity-like-icon" class="dz-like icon-thumbs-up">
+                        <span class="action-label">
+                          <span id="activity-like-text">Like</span>
+                        </span>
+                        <a href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus#">
+                          <span id="activity-like-counter">(59)</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="action comment-action">
+
+                      <button class="comment" fdprocessedid="r1088l">
+                        <i class="icon-comment"></i>
+                        Comment
+                        <span id="activity-comment-counter" class="comment-count">(2)</span>
+                      </button>
+                    </div>
+
+                    <div class="save action">
+                      <div id="activity-save-icon" class="save icon-star-empty">
+                        <span id="activity-save-text" class="action-label">Save</span>
+                      </div>
+                    </div>
+
+                    <div class="tweet action">
+                      <a id="tweet-link" href="https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus" class="title" target="_blank">
+                        <span><i class="icon-twitter"></i></span>
+                        <span class="action-label">Tweet</span>
+                      </a>
+                    </div>
+
+                    <div class="linkedin action">
+                      <a id="linkedin-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus" class="title" target="_blank">
+                        <span><i class="icon-linkedin-1"></i></span>
+                        <span class="action-label">Share</span>
+                      </a>
+                    </div>
+
+                    <div class="right-most">
+                      <div id="activity-view-container" class="article-views action">
+                        <i class="icon-eye"></i> 85.6K
+                        <span class="action-label">Views</span>
+                      </div>
+                    </div>
+                  </div>
+
+                      <div class="signin-prompt">
+                        <p>Join the DZone community and get the full member experience.</p>
+                        <a id="article-signin-prompt" href="https://dzone.com/static/registration.html">Join For Free</a>
+                      </div>
+                      <div class="arrow-down"></div>
+
+                    <div id="top-bumper-container"></div>
+
+                  <div>
+                    <div class="content-html"><p>If you are a new or experienced developer, you have to use source control. And good chances are you are using Git to manage your source code.&nbsp;</p>
+<p>And to use Git to its full potential, you need to know Git commands. Here you will learn the most helpful Git commands that will take you from one level to another.&nbsp;</p>
+<p>To make this Git commands guide more helpful, I have divided the guide into three different sections: <strong>Basic, Intermediate, and Advanced Git commands</strong>.&nbsp;</p>
+<p>This is an epic guide. And to make it more useful, I have added a Bonus section where you can download <a href="https://acompiler.com/git-commands/">51+ Git commands</a> and a few more downloads to boost your productivity in Git.&nbsp;</p>
+<h2>Basic Git Commands</h2>
+<p>In this section, you will learn the essential Git commands. These basic Git commands are the foundation to learn more advanced commands.&nbsp;</p>
+<p>Here are the nine useful Git commands.</p>
+<h3>1. git config</h3>
+<p>Git config command is super helpful. Especially when you are using Git for the first time, or you have a new Git installation. This command will set up your identity - Name and Email address. And this information will be used with every commit.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git config --global user.name "Your name" &nbsp;</code></p>
+<p><code>$ git config --global user.email "Your email"</code></p>
+<p><br></p>
+<h3>2. git version</h3>
+<p>As its name implies, it's just to check which version of Git you are using. At the moment, writing this guide, the latest version of Git for Windows is 2.31.1. It was released on 27th March 2021.</p>
+<p><strong><strong>Usage</strong> &nbsp;</strong></p>
+<p><code>$ git version</code></p>
+<p><br></p>
+<h3>3. git init</h3>
+<p>This is probably the first command you use to start a new project in Git. This command will create a blank new repository, and then you can store your source code inside this repo.</p>
+<p><strong>Usage &nbsp;</strong></p>
+<p><code>$ git init</code>&nbsp;</p>
+<p>Or you can use the repository name with your git init command.</p>
+<p><code>$ git init &lt;your repository name&gt;</code></p>
+<h3><br>4. git clone</h3>
+<p>The git clone command will use an existing repository to copy. There is one main difference between the git init and git clone.&nbsp;</p>
+<p>You will use the Git clone when you need to make a copy on an existing repository. The git clone command internally uses the git init command first and then checks out all its contents.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>git clone &lt;your project URL&gt;</code></p>
+<p><br></p>
+<h3>5. git add</h3>
+<p>The Git add command will add all the new code files or modified files into your repository. This command offers different options to add files and folders.&nbsp;</p>
+<p>Here is the usage of the Git add command.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git add your_file_name</code> (it will add a single file to your staging area)</p>
+<p><code>$ git add *</code> ( this option will add all the modified and new files to the staging area)</p>
+<p><br></p>
+<h3>6. git commit</h3>
+<p>This Git command is essential. Your project quality may drop if you will not use this command appropriately. There is another article about how to use Git commands property, and you can read that <a href="https://acompiler.com/git-best-practices/">here</a>.</p>
+<p>In simple words, the Git commit will add your changes to your local repository.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git commit -m “your useful commit message”</code></p>
+<p><br></p>
+<h3>7. git status&nbsp;</h3>
+<p>This Git command is convenient to see how many files are there which need your attention. You can run this command at any time.&nbsp;</p>
+<p>You can use it in between Git add, and Git commits to see the status.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git status</code>&nbsp;</p>
+<p><br></p>
+<h3>8. git branch</h3>
+<p>Most of the time, you have multiple branches in your Git repository. In simple terms, the branch is an independent line of code development.&nbsp;</p>
+<p>With the Git branch command, you can manage your branches effectively. There are many different options and switches of the Git branch.&nbsp;</p>
+<p>To make it simple, here I will highlight how you can create and delete a Git branch (in case you need more depth, you can refer to - Git Branching and Merging section of <a href="https://acompiler.com/git-commands/">this article</a>).</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p>(i) To list all branches:</p>
+<p><code>$ git branch</code>&nbsp;</p>
+<p><br>(ii) To create a new branch:</p>
+<p><code>$ git branch &lt;branch_name&gt;</code></p>
+<p><br>(iii) To delete a branch:</p>
+<p><code>$ git branch -d &lt;branch_name&gt;</code></p>
+<h3><br>9. git checkout</h3>
+<p>This Git command is used to switch between branches. This is one of the powerful git commands and can use used as a swiss knife,&nbsp;</p>
+<p>In simple words, here is the syntax to switch to another branch.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git checkout &lt;branch_name&gt;</code></p>
+<p>Also, you can create and checkout to a branch in a single like, here is the usage for that&nbsp;</p>
+<p><code>$ git checkout -b &lt;your_new_branch_name&gt;</code></p>
+<p><br></p>
+<h2>Intermediate Level Git Commands</h2>
+<p>After the basic Git commands, it's time to share with you intermediate Git commands; these Git commands are super helpful if you need to collaborate with your team, share your code with others. Also, there are commands like Git log that will help to see the history of previous commits.</p>
+<h3>10. git remote</h3>
+<p>Git remote command acts like a border, and If you need to connect with the outside world, you have to use the Git remote command. This command will connect your local repository to the remote.&nbsp;</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git remote add &lt;shortname&gt; &lt;url&gt;</code></p>
+<p><strong><br>Example</strong></p>
+<p><code>$ git remote add origin https://dev.azure.com/aCompiler/_git/DemoProject</code></p>
+<p><br></p>
+<h3>11. git push</h3>
+<p>Once you are connected with the remote repository (with the help of the git remote command), it's time to push your changes to that repository.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git push -u &lt;short_name&gt; &lt;your_branch_name&gt;</code></p>
+<p><strong>Example&nbsp;</strong></p>
+<p><code>$ git push -u origin feature_branch</code></p>
+<p><br>You should have origin and upstream set up before you use Git push. And here is the command to set up upstream.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git push --set-upstream &lt;short_name&gt; &lt;branch_name&gt;</code></p>
+<p><strong>Example&nbsp;</strong></p>
+<p><code>$ git push --set-upstream origin feature_branch</code></p>
+<p><br></p>
+<h3>13. git fetch&nbsp;</h3>
+<p>When you need to download other team members' changes, you have to use git fetch.&nbsp;</p>
+<p>This command will download all information for commits, refs, etc., so you can review it before applying those changes in your local repository.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git fetch</code>&nbsp;</p>
+<h3><br>14. git pull</h3>
+<p>The Git pull command downloads the content (and not the metadata) and immediately updates your local repository with the latest content.&nbsp;</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git pull &lt;remote_url&gt;</code></p>
+<p><br></p>
+<h3>15. git stash</h3>
+<p>This Git command temporarily stores your modified files. You can work in stashed with the following Git command.&nbsp;</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git stash</code>&nbsp;</p>
+<p>And you can view all of your stashes with the following command&nbsp;</p>
+<p><code>$ git stash list</code>&nbsp;</p>
+<p>And if you need a apply a stash to a branch, simply use apply&nbsp;</p>
+<p><code>$ git stash apply</code>&nbsp;</p>
+<p><br></p>
+<h3>16. git log</h3>
+<p>With the help of the Git log, you can see all the previous commits with the most recent commit appear first.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git log</code>&nbsp;</p>
+<p>By default, it will show you all the commits of the currently checked out branch, but you can force it to see all the commits of all the branches with all options.&nbsp;</p>
+<p><code>$ git log --all</code></p>
+<p><br></p>
+<h3>17. git shortlog</h3>
+<p>The shortlog command shows you a summary from the Git log command. This command is helpful if you are just interested in the short summary.&nbsp;</p>
+<p>This command is helpful to see who worked on what as it group author with their commits.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git shortlog</code> &nbsp;</p>
+<p><img style="width: 700px;" class="fr-fic fr-dib ls-is-cached lazyloaded" data-image="true" data-new="false" data-sizeformatted="25.3 kB" data-mimetype="image/png" data-creationdate="1620572717500" data-creationdateformatted="05/09/2021 03:05 PM" data-type="temp" data-url="/storage/temp/14720790-git-shortlog-command-768x3521.png" data-modificationdate="null" data-size="25341" data-name="git-shortlog-command-768x3521.png" data-id="14720790" data-src="https://dz2cdn1.dzone.com/storage/temp/14720790-git-shortlog-command-768x3521.png" alt="Git Shortlog Results" src="./Top 35 Git Commands With Examples - DZone_files/git-shortlog-command-768x3521.png"></p>
+<h3><br></h3>
+<h3>18. git show</h3>
+<p>Compared to the Git log, this command git show will show you details about a specific commit.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git show &lt;your_commit_hash&gt;</code></p>
+<p><br></p>
+<h3>19. git rm</h3>
+<p>Sometimes you need to delete files from your codebase, and in that case, you can use the Git rm command.</p>
+<p>It can delete tracked files from the index and the working directory.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git rm &lt;your_file_name&gt;</code></p>
+<p><br></p>
+<h3>20. git merge</h3>
+<p>Git merge helps you to integrate changes from two branches into a single branch.&nbsp;</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git merge &lt;branch_name&gt;</code></p>
+<p>This command will merge the &lt;branch_name&gt; into your current selected branch.</p>
+<p><br></p>
+<h2>Advanced Level Git Commands</h2>
+<p>And now the time to up one more level. In this section, you will learn the advanced Git commands. These commands will take time and practice.</p>
+<p>Once you know the basics of these commands, it will be easy to use them every day.</p>
+<h3>21. git rebase&nbsp;</h3>
+<p>Git rebase similar to the git merge command. It integrates two branches into a single branch with one exception. A git rebase command rewrites the commit history.</p>
+<p>You should use the Git rebase command when you have multiple private branches to consolidate into a single branch. And it will make the commit history linear.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git rebase &lt;base&gt;</code></p>
+<p><br></p>
+<h3>22. git bisect&nbsp;</h3>
+<p>The Git bisect command helps you to find bad commits.&nbsp;</p>
+<p><strong>Usage</strong></p>
+<p>i) To start the git bisect&nbsp;</p>
+<p><code>$ git bisect start</code></p>
+<p><br>ii) let git bisect know about a good commit</p>
+<p><code>$ git bisect good a123</code>&nbsp;</p>
+<p><br>iii) And let git bisect know about a bad commit</p>
+<p><code>$ git bisect bad z123</code></p>
+<p>With Git bisect you can narrow down the broken code within a few minutes.<br><br></p>
+<h3>23. git cherry-pick&nbsp;</h3>
+<p>Git cherry-pick is a helpful command. It's a robust command and allows you to pick any commit from any branch and apply it to any other branch.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git cherry-pick &lt;commit-hash&gt;</code></p>
+<p>Git cherry-pick doesn’t modify the history of a repository; instead, it adds to the history.</p>
+<p><br></p>
+<h3>24. git archive&nbsp;</h3>
+<p>Git archive command will combine multiple files into a &nbsp;single file. It's like a zip utility, so it means you can extract the archive files to get individual files.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git archive --format zip HEAD &gt; archive-HEAD.zip</code></p>
+<p>It will create a zip archive of the current revision.</p>
+<p><br></p>
+<h3>25. git pull --rebase</h3>
+<p>Most of the time, you need to do rebase (and no merge) when you use Git pull.</p>
+<p>In that case, you can use the option</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git pull --rebase</code></p>
+<p>It will help you to keep the history clean. Also, you can avoid multiple merges.</p>
+<p><br></p>
+<h3>26. git blame&nbsp;</h3>
+<p>If you need to examine the content of any file line by line, &nbsp;you need to use git blame. It helps you to determine who made the changes to a file.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git blame &lt;your_file_name&gt;</code></p>
+<p><br></p>
+<h3>27. git tag</h3>
+<p>In Git, tags are helpful, and you can use them to manage the release. You can think of a Git tag like a branch that will not change. It is significantly more important if you are making a public release.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git tag -a v1.0.0</code></p>
+<h3><br>28. git verify-commit</h3>
+<p>The git verify-commit command will check the gpg signature. GPG or “GNU Privacy Guard” is the tool used in sign files and contains their signatures.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git verify-commit &lt;commit&gt;</code></p>
+<p><br></p>
+<h3>29. git verify-tag</h3>
+<p>In the same way, you can confirm a tag.</p>
+<p><strong>Usage&nbsp;</strong></p>
+<p><code>$ git verify-tag &lt;tag&gt;</code></p>
+<h3><br>30. git diff</h3>
+<p>Most of the time, you need to compare two git files or branches before you commit or push. Here is a handy command to do that.&nbsp;</p>
+<p><strong>Usage</strong></p>
+<p>i) to compare the working directory with the local repo:</p>
+<p><code>$ git diff HEAD &lt;filename&gt;</code></p>
+<p>ii) to compare two branches:</p>
+<p><code>$ git diff &lt;source branch&gt; &lt;target branch&gt;</code></p>
+<p><br></p>
+<h3>31. git citool</h3>
+<p>Git citool is a graphics alternative of the Git commit.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git citool</code></p>
+<p><br></p>
+<p>Use image from <em>https://acompiler.com/wp-content/uploads/2020/06/git-citool-productivity-tool-768x431.png</em>.</p>
+<h3>32. git mv</h3>
+<p>To rename a git file. It will accept two arguments, source and target file name.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git mv &lt;old-file-name&gt; &lt;new-file-name&gt;</code></p>
+<p><br></p>
+<h3>33. git clean</h3>
+<p>You can deal with untracked files by using the Git clean command. You can remove all the untracked files from your working directory by using this command. In case you want to deal with tracked files you need to use the <a href="https://acompiler.com/git-head/">Git reset command</a>.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git clean</code></p>
+<p><br></p>
+<h3>34. git help</h3>
+<p>There are many commands in Git, and if you need more help with any command, you can use git help at any time from the terminal.&nbsp;</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git help &lt;git_command&gt;</code></p>
+<p><br></p>
+<h3>35. git whatchanged</h3>
+<p>This command does the same thing as git log but in a raw form. And it’s in the git because of historical reasons.</p>
+<p><strong>Usage</strong></p>
+<p><code>$ git whatchanged</code></p></div>
+                  </div>
+
+                    <div id="bottom-bumper-container"></div>
+                    <div class="article-tag-pill-container">
+                        <span class="article-tag-pill">Git</span>
+                        <span class="article-tag-pill">Command (computing)</span>
+                        <span class="article-tag-pill">Branch (computer science)</span>
+                        <span class="article-tag-pill">Commit (data management)</span>
+                    </div>
+
+                    <div class="attribution">
+                      <p>Opinions expressed by DZone contributors are their own.</p>
+                    </div>
+                      <div class="trending-separator goto"></div>
+                      <div class="trending goto">
+                        <h3>Related</h3>
+                        <ul>
+                            <li class="item">
+                              <div class="goto-link related-link" data-goto="/articles/git-reset-head">Git Reset HEAD</div>
+                            </li>
+                            <li class="item">
+                              <div class="goto-link related-link" data-goto="/articles/git-basic-terminologies-explained">Git: Basic Terms and Commands Explained</div>
+                            </li>
+                            <li class="item">
+                              <div class="goto-link related-link" data-goto="/articles/developer-git-commit-hygiene-1">Developer Git Commit Hygiene</div>
+                            </li>
+                            <li class="item">
+                              <div class="goto-link related-link" data-goto="/articles/understanding-git">Understanding Git</div>
+                            </li>
+                        </ul>
+                      </div>
+                </div>
+              </article>
+            </div>
+
+              <div id="above-pr-ad" class="bottom-ad-container">
+                <div id="div-gpt-ad-1435246566686-11" class="ads-bottom-leaderboard" data-gpt-slot="bottom" data-google-query-id="CLWyop605IcDFVSEOgUdW9oDxA"><div id="google_ads_iframe_/5055/dz2_article_leaderboard_3_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/5055/dz2_article_leaderboard_3_0" name="google_ads_iframe_/5055/dz2_article_leaderboard_3_0" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="attribution-reporting" data-load-complete="true" data-google-container-id="4" style="border: 0px; vertical-align: bottom;" src="./Top 35 Git Commands With Examples - DZone_files/saved_resource.html"></iframe></div></div>
+              </div>
+              <div class="layout-card widget-top-border partner-resources-block" style="width:100%; margin-bottom: 1em;">
+                <div class="main-container">
+                  <div class="featured-header">
+                    <h2>
+                      <span>Partner Resources</span>
+                    </h2>
+                  </div>
+                  <div class="partner-resources-container">
+                    <div id="div-gpt-ad-1435246566686-5" class="resource-block" data-gpt-slot="partner" data-gpt-position="pr1" data-google-query-id="CKW9op605IcDFQSrOgUdIRsWxA" style="display: none;"><div id="google_ads_iframe_/5055/dz2_partner_resource_link_0__container__" style="border: 0pt none;"></div></div>
+                    <div id="div-gpt-ad-1435246566686-6" class="resource-block" data-gpt-slot="partner" data-gpt-position="pr2" data-google-query-id="CMfEop605IcDFS2wOgUdfEwIyw" style="display: none;"><div id="google_ads_iframe_/5055/dz2_partner_resource_link_1__container__" style="border: 0pt none;"></div></div>
+                    <div id="div-gpt-ad-1435246566686-7" class="resource-block" data-gpt-slot="partner" data-gpt-position="pr3" data-google-query-id="CMDeop605IcDFeOtOgUdbi4NBg" style="display: none;"><div id="google_ads_iframe_/5055/dz2_partner_resource_link_2__container__" style="border: 0pt none;"></div></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="bsa-parent" class="bottom-sticky-ad-container">
+        <div id="div-gpt-ad-1635294790718-12" data-gpt-desktop="true" class="bottom-sticky-ad" data-google-query-id="COz7o8Kz5IcDFcuwOgUdwhMOcA"><div id="google_ads_iframe_/5055/sticky_footer_leaderboard_0__container__" style="border: 0pt none; display: inline-block; width: 728px; height: 90px;"><iframe frameborder="0" src="./Top 35 Git Commands With Examples - DZone_files/container(1).html" id="google_ads_iframe_/5055/sticky_footer_leaderboard_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="3" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+      </div>
+
+    <div class="modal fade bd-example-modal-lg" id="modal-message" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"></div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="comments-overlay"></div>
+<div id="comment-box">
+  <div class="comment-box-wrapper">
+    <div id="comment-input-editor"></div>
+  </div>
+  <div class="info hidden"></div>
+  <div class="comments-content">
+    <div class="comment-header">
+      <hr>
+      <span class="icon-comment">
+        <span class="numOfComments"></span> Comments
+      </span>
+    </div>
+    <div class="comments"></div>
+  </div>
+</div>
+
+<script async="">const articleTitle = 'Top 35 Git Commands With Examples'
+const articleUrl = 'https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus'
+
+const retweetLink = document.querySelector('#tweet-link')
+
+function retweet(event) {
+    event.preventDefault()
+    event.stopPropagation()
+
+    const twitter = 'https://twitter.com/intent/tweet'
+    const params = '?text=' + encodeURIComponent(articleTitle) + '&url=' + articleUrl + '&ref=dzone.com&via=DZoneInc'
+    const win = window.open(twitter + params, '_blank')
+    win.focus()
+}
+
+retweetLink.addEventListener('click', retweet);
+
+function showStatusMessage(options) {
+  var modal = document.getElementById("modal-message");
+
+  if(modal) {
+    modal.classList.add(options.type);
+    var modalBody = modal.querySelector(".modal-content .modal-body");
+    var modalHeader = modal.querySelector(".modal-content .modal-header");
+
+    modalHeader.innerText = options.header ? options.header : "";
+    modalBody.innerText = options.body ? options.body : "";
+
+    $(modal).modal("show");
+
+    $(modal).on('hidden.bs.modal', function () {
+      modal.classList.remove(options.type);
+    });
+  }
+}
+
+function showConfirmMessage(options) {
+  var modal = document.getElementById("modal-message");
+
+  if(modal) {
+    modal.classList.add(options.type);
+    var modalBody = modal.querySelector(".modal-content .modal-body");
+    var modalHeader = modal.querySelector(".modal-content .modal-header");
+
+    modalHeader.innerText = options.header ? options.header : "";
+    modalBody.innerText = options.body ? options.body : "";
+
+    if (options.textarea) {
+      const textareaDiv = document.createElement('div')
+      const textareaLabel = document.createElement('label')
+      textareaLabel.setAttribute('for', 'modal-textarea')
+      textareaLabel.innerText = options.textarea.label
+
+      const textarea = document.createElement('textarea')
+      textarea.id = 'modal-textarea'
+      textarea.placeholder = (options.textarea.placeholder || '')
+      textarea.setAttribute('rows', (options.textarea.rows || 3))
+      textarea.classList.add('form-control', 'not-resizable')
+
+      if (options.textarea.maxlength) {
+        textarea.maxLength = options.textarea.maxlength
+      }
+
+      textareaDiv.appendChild(textareaLabel)
+      textareaDiv.appendChild(textarea)
+      modalBody.appendChild(textareaDiv)
+    }
+
+    var btnContainer = document.createElement("div");
+    btnContainer.classList.add("btn-container");
+
+    var noBtn = document.createElement("button");
+    noBtn.innerText = options.noBtnText ? options.noBtnText : "No";
+    noBtn.classList.add("no-btn");
+
+    var yesBtn = document.createElement("button");
+    yesBtn.innerText = options.yesBtnText ? options.yesBtnText : "Yes";
+    yesBtn.classList.add("yes-btn");
+
+    btnContainer.appendChild(noBtn);
+    btnContainer.appendChild(yesBtn);
+
+    modalBody.appendChild(btnContainer);
+
+    $(modal).modal("show");
+
+    $(noBtn).one("click", function() {
+      $(modal).modal("hide");
+
+      if(options.noCallback) {
+        $(modal).one('hidden.bs.modal', function () {
+          options.noCallback();
+        });
+      }
+    });
+
+    $(yesBtn).one("click", function() {
+      $(modal).modal("hide");
+
+      if(options.yesCallback) {
+        $(modal).one('hidden.bs.modal', function () {
+          options.yesCallback();
+        });
+      }
+    });
+
+    $(modal).on('hidden.bs.modal', function () {
+      modal.classList.remove(options.type);
+    });
+  }
+}
+
+function getSuspensionBody() {
+  return 'We regret to inform you that your DZone account has been suspended for violating our Guidelines. ' +
+      'Please reach out to editors@dzone.com if you would like additional information.';
+}</script>
+
+<link rel="stylesheet" media="all" href="./Top 35 Git Commands With Examples - DZone_files/styles(3).css">
+
+<div id="ftl-footer">
+  <div class="container-fluid footerOuter">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container">
+          <div class="row footer">
+            <div class="col-md-12 footerWidget">
+              <div class="row footerContainer footer">
+                <div class="left col-xs-12 col-sm-7">
+                  <div class="col-xs-12 social-media-icons footer-mobile">
+                    <ul class="icons-only">
+                      <li class="rss-icon" id="rss-footer-1">
+                        <a href="https://dzone.com/pages/feeds" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-rss-1"></i>
+                        </a>
+                      </li>
+                      <li class="twitter-icon">
+                        <a href="https://twitter.com/DZoneInc" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="facebook-icon">
+                        <a href="https://www.facebook.com/DZoneInc" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-facebook-1"></i>
+                        </a>
+                      </li>
+                      <li class="linkedin-icon">
+                        <a href="https://www.linkedin.com/company/dzone/" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-linkedin-1"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="top-section col-xs-12">
+                    <div class="col-xs-12 col-sm-6">
+                      <p class="section-header">ABOUT US</p>
+                      <ul class="link-group">
+                        <li><a href="https://dzone.com/pages/about" rel="noreferrer noopener">About DZone</a></li>
+                        <li><a href="mailto:support@dzone.com" rel="noreferrer noopener">Send feedback</a></li>
+                        <li><a href="https://dzone.com/pages/2023-community-research-report">Community research</a></li>
+                          <li><a href="https://dzone.com/sitemap" rel="noreferrer noopener">Sitemap</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <p class="section-header">ADVERTISE</p>
+                      <ul class="link-group">
+                        <li><a href="https://advertise.dzone.com/" target="_blank" rel="noreferrer noopener">Advertise with DZone</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="bottom-section col-xs-12">
+                    <div class="col-xs-12 col-sm-6">
+                      <p class="section-header">CONTRIBUTE ON DZONE</p>
+                      <ul class="bottom-top-list link-group">
+                        <li><a href="https://dzone.com/articles/dzones-article-submission-guidelines">Article Submission Guidelines</a></li>
+                        <li><a href="https://dzone.com/pages/contribute" rel="noreferrer noopener">Become a Contributor</a></li>
+                        <li><a href="https://dzone.com/pages/core" rel="noreferrer noopener">Core Program</a></li>
+                        <li><a href="https://dzone.com/writers-zone" rel="noreferrer noopener">Visit the Writers' Zone</a></li>
+                      </ul>
+
+                      <p class="section-header">LEGAL</p>
+                      <ul class="link-group">
+                        <li><a href="https://technologyadvice.com/terms-conditions/" target="_blank" rel="noopener" referrerpolicy="no-referrer-when-downgrade">Terms of Service</a></li>
+                        <li><a href="https://technologyadvice.com/privacy-policy/" target="_blank" rel="noopener" referrerpolicy="no-referrer-when-downgrade">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <p class="section-header">CONTACT US</p>
+                      <ul class="link-group">
+                        <li>3343 Perimeter Hill Drive</li>
+                        <li>Suite 100</li>
+                        <li>Nashville, TN 37211</li>
+                        <li><a href="mailto:support@dzone.com" rel="noreferrer noopener">support@dzone.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right col-xs-12 col-sm-5">
+
+                  <p class="connect-text">Let's be friends:</p>
+                  <div class="col-xs-12 social-media-icons footer-wide">
+                    <ul class="icons-only">
+                      <li class="rss-icon" id="rss-footer-1">
+                        <a href="https://dzone.com/pages/feeds" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-rss-1"></i>
+                        </a>
+                      </li>
+                      <li class="twitter-icon">
+                        <a href="https://twitter.com/DZoneInc" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="facebook-icon">
+                        <a href="https://www.facebook.com/DZoneInc" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-facebook-1"></i>
+                        </a>
+                      </li>
+                      <li class="linkedin-icon">
+                        <a href="https://www.linkedin.com/company/dzone/" target="_blank" rel="noreferrer noopener">
+                          <i class="icon-linkedin-1"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script async="" src="./Top 35 Git Commands With Examples - DZone_files/f(2).txt"></script>
+
+  <script async="">
+      (function(w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+          var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j,f);
+      })(window, document, 'script', 'dataLayer', 'GTM-K25QL22');
+  </script>
+
+  <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-410289-1', 'auto');
+      ga('require', 'linkid', 'linkid.js');
+      ga('require', 'GTM-TSD9TZP');
+      ga('set', 'siteSpeedSampleRate', 25);
+  </script>
+  <script async="" src="./Top 35 Git Commands With Examples - DZone_files/analytics.js.download"></script>
+  <script async="">const analytics = {
+    'dimension1': 'Deployment',
+    'dimension2': 'article/tutorial',
+    'dimension3': '2021-05-09',
+    'dimension4': '0',
+    'dimension5': '',
+    'dimension7': 'Git, command, branch, commit',
+    'dimension8': 'acompiler20',
+    'dimension9': 'undefined',
+    'dimension10': ''
+};
+
+if (window.ga) {
+    Object.keys(analytics).forEach(function(key) {
+        window.ga('set', key, analytics[key]);
+    });
+
+    window.ga('send', 'pageview');
+}</script>
+
+  <script>
+      const articleId = 3124521;
+      const likes = 59;
+      const assetDomain = 'https://dz2cdn1.dzone.com';
+      const codemirrorVars = {
+          modeURI: 'https://dz2cdn1.dzone.com/themes/dz20/lib/codemirror/mode/',
+          requiredScripts: [
+              'https://dz2cdn1.dzone.com/themes/dz20/lib/codemirror/lib/codemirror.js',
+              'https://dz2cdn1.dzone.com/themes/dz20/lib/codemirror/addon/mode/multiplex.js',
+              'https://dz2cdn1.dzone.com/themes/dz20/lib/codemirror/mode/meta.js'
+          ]
+      };
+
+      const gptTags = {
+          'zone': 'Deployment',
+          'topicTag': 'Git,command,branch,commit',
+          'company': '',
+          'siteSection': 'Zones',
+          'articleCategory': 'tutorial',
+          'nodeID': '3124521',
+          'authorID': '4394462',
+          'publishYear': '2021',
+          'publishMonth': '05',
+          'jobRole': '',
+          'companySize': '',
+          'env': 'prod'
+      };
+
+      const minCommentChar = 10;
+
+        const ctaModel = null;
+  </script>
+
+  <script src="./Top 35 Git Commands With Examples - DZone_files/jquery.min.js.download"></script>
+  <script async="" src="./Top 35 Git Commands With Examples - DZone_files/bootstrap.min.js.download"></script>
+  <script async="" src="./Top 35 Git Commands With Examples - DZone_files/ads.js.download" onload="loadCTAIntoPage()"></script>
+
+  <script>
+      (function (w,d,t) {
+          _ml = w._ml || {};
+          _ml.eid = '65559';
+          var s, cd, tag; s = d.getElementsByTagName(t)[0]; cd = new Date();
+          tag = d.createElement(t); tag.async = 1;
+          tag.src = 'https://ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth();
+          s.parentNode.insertBefore(tag, s);
+      })(window,document,'script');
+  </script>
+
+  <script>
+      !function(e,t,c,n,o,a,m){e._bmb||(o=e._bmb=function(){o.x?o.x.apply(o,arguments):o.q.push(arguments)},o.q=[],a=t.createElement(c),a.async=true,a.src="https://vi.ml314.com/get?eid=65559&tk=v56Edzruvd7dE2f68VuNhft2O2fbnq2blg8566IFCW1MX43d&fp="+(e.localStorage&&e.localStorage.getItem(n)||""),m=t.getElementsByTagName(c)[0],m.parentNode.insertBefore(a,m))}(window,document,"script","_ccmaid");
+  </script>
+
+  <script>
+      function loadScript(src) {
+          return new Promise(function (resolve, reject) {
+              const s = document.createElement('script')
+              s.src = src
+              s.onload = resolve
+              s.onerror = reject
+              document.head.appendChild(s)
+          })
+      }
+
+      function loadStyle(href) {
+          const link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.href = href
+          document.head.appendChild(link)
+      }
+
+      function loadScriptsSync(deferred) {
+          var p = Promise.resolve()
+          for (var i = 0; i < deferred.length; i++) {
+              let script = deferred[i]
+              p = p.then(function() {
+                  return loadScript(script)
+              })
+          }
+          return p
+      }
+
+      function loadStyles() {
+          const deferred = [
+              'https://dz2cdn1.dzone.com/themes/dz20/lib/codemirror/lib/codemirror.css',
+              'https://dz2cdn1.dzone.com/themes/dz20/ftl/comments/styles.css',
+              'https://dz2cdn1.dzone.com/themes/dz20/lib/froala3/css/froala_editor.pkgd.min.css',
+              'https://dz2cdn1.dzone.com/themes/dz20/lib/froala3/css/themes/gray.min.css',
+              'https://dz2cdn1.dzone.com/themes/dz20/ftl/article/mini-profile.css'
+          ]
+
+          for (var i = 0; i < deferred.length; i++) {
+              loadStyle(deferred[i])
+          }
+      }
+
+      window.addEventListener('load', function(event) {
+          loadStyles()
+
+          loadScriptsSync([
+            'https://dz2cdn1.dzone.com/themes/dz20/lib/lazysizes.min.js',
+            'https://dz2cdn1.dzone.com/themes/dz20/ftl/article/codeblocks.js',
+            'https://dz2cdn1.dzone.com/themes/dz20/ftl/article/activity-bar.js',
+            'https://dz2cdn1.dzone.com/themes/dz20/lib/froala3/js/froala_editor.pkgd.min.js',
+            'https://dz2cdn1.dzone.com/themes/dz20/ftl/froala/content.js',
+            'https://dz2cdn1.dzone.com/themes/dz20/ftl/comments/content.js',
+            'https://dz2cdn1.dzone.com/themes/dz20/ftl/article/content.js'
+          ])
+      })
+  </script>
+
+<script type="text/javascript" id="6senseWebTag" src="./Top 35 Git Commands With Examples - DZone_files/01192dc3-157f-4d5a-bea4-02f62692239e.js.download"></script><script type="text/javascript" id="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","dyr9vdlv8t");</script>
+<script type="text/javascript" id="">(function(b,a,c){var e=decodeURIComponent;var d="||";var g=";;",f="split",h="length",m="indexOf",k="localStorage",l="_ccmdt";b[c]=b[c]||{};b[c].us={};a=b[k]?b[k][l]||"":(a=a.cookie.match(l+"\x3d([^;]*)"))&&a[1]||"";e=e(a)[f](d);a=e[h];if(0<a)for(;a--;)d=e[a][f]("\x3d"),1<d[h]&&(-1<d[1][m](g)?(b[c].us[d[0]]=d[1][f](g),b[c].us[d[0]].pop()):b[c].us[d[0]]=d[1])})(window,document,"_ml");
+(function(){_ml=window._ml||{};_ml.eid="65559";_ml.informer={callback:function(){_ml.isEmptyObj(_ml.us)||(window.dataLayer=window.dataLayer||[],dataLayer.push({event:"bombora_profile_load",Bombora_Domain:_ml.us.dm,Bombora_Industry:_ml.us.ind,Bombora_Revenue:_ml.us.cr,Bombora_Size:_ml.us.cs,Bombora_B2B_Interest:_ml.us.tp&&0<_ml.us.tp.length?_ml.us.tp[0]:null,Bombora_Interest_Group:_ml.us.pc&&0<_ml.us.pc.length?_ml.us.pc[0]:null,Bombora_Install_Data:_ml.us.ins&&0<_ml.us.ins.length?_ml.us.ins[0]:null,
+Bombora_Seniority:_ml.us.sn,Bombora_Decision_Maker:_ml.us.dcm,Bombora_Job_Function:_ml.us.fa&&0<_ml.us.fa.length?_ml.us.fa[0]:null,Bombora_Prof_Group:_ml.us.pg&&0<_ml.us.pg.length?_ml.us.pg[0]:null}))},enable:!0};var b=document.getElementsByTagName("script")[0],a=new Date,c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src="https://ml314.com/tag.aspx?"+a.getDate()+a.getMonth()+a.getFullYear();b.parentNode.insertBefore(c,b)})();</script>
+<script type="text/javascript" id="">window[function(d,e){for(var b="",c=0;c<d.length;c++){var a=d[c].charCodeAt();a-=e;b==b;a+=61;a!=c;9<e;a%=94;a+=33;b+=String.fromCharCode(a)}return b}(atob("YlFYendybWt8U20j"),8)]="15ea09908c1685545788";var zi=document.createElement("script");zi.type="text/javascript";zi.async=!0;zi.src=function(d,e){for(var b="",c=0;c<d.length;c++){var a=d[c].charCodeAt();a-=e;b==b;a!=c;a+=61;a%=94;a+=33;8<e;b+=String.fromCharCode(a)}return b}(atob("NUFBPUBlWlo3QFlHNlhAMD82PUFAWTA8OlpHNlhBLjRZN0A\x3d"),43);
+"complete"===document.readyState?document.body.appendChild(zi):window.addEventListener("load",function(){document.body.appendChild(zi)});</script><script type="text/javascript" id="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g+"?ref\x3dgtm2";d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","l7xu65at89");</script>
+<script type="text/javascript" id="">(function(b,a,c){var e=decodeURIComponent;var d="||";var g=";;",f="split",h="length",m="indexOf",k="localStorage",l="_ccmdt";b[c]=b[c]||{};b[c].us={};a=b[k]?b[k][l]||"":(a=a.cookie.match(l+"\x3d([^;]*)"))&&a[1]||"";e=e(a)[f](d);a=e[h];if(0<a)for(;a--;)d=e[a][f]("\x3d"),1<d[h]&&(-1<d[1][m](g)?(b[c].us[d[0]]=d[1][f](g),b[c].us[d[0]].pop()):b[c].us[d[0]]=d[1])})(window,document,"_ml");
+(function(){_ml=window._ml||{};_ml.eid="65559";_ml.cid=google_tag_manager["rm"]["6133197"](11);_ml.fp=google_tag_manager["rm"]["6133197"](14);_ml.ef=["*email","*username"];_ml.informer={callback:function(e,d){"undefined"==typeof dataLayer||_ml.isEmptyObj(_ml.us)||dataLayer.push({event:"Bombora_Informer",Bombora_Topic:_ml.us.tp&&0<_ml.us.tp.length?_ml.us.tp[0]:"",Bombora_Industry:_ml.us.ind,Bombora_Company_Revenue:_ml.us.cr,Bombora_Company_Size:_ml.us.cs,Bombora_Domain:_ml.us.dm,Bombora_Seniority:_ml.us.sn,Bombora_Predictive_Category:_ml.us.pc&&
+0<_ml.us.pc.length?_ml.us.pc[0]:"",Bombora_Decision_Maker:_ml.us.dcm,Bombora_Functional_Area:_ml.us.fa&&0<_ml.us.fa.length?_ml.us.fa[0]:"",Bombora_Install_Data:_ml.us.ins&&0<_ml.us.ins.length?_ml.us.ins[0]:"",Bombora_Professional_Group:_ml.us.pg&&0<_ml.us.pg.length?_ml.us.pg[0]:"",Bombora_Education:_ml.us.edu})},enable:!0};var b=document.getElementsByTagName("script")[0],a=new Date,c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src="https://ml314.com/tag.aspx?"+a.getDate()+
+a.getMonth()+a.getFullYear();b.parentNode.insertBefore(c,b)})();</script>
+<script type="text/javascript" id="">document.querySelectorAll('a[rel*\x3d"noreferrer"][href*\x3d"technologyadvice.com"]').forEach(function(a){var b=a.rel.split(" ");b.splice(b.indexOf("noreferrer"),1);a.rel=b.join(" ")});document.querySelectorAll('a[href*\x3d"technologyadvice.com"]').forEach(function(a){a.referrerPolicy="no-referrer-when-downgrade"});</script><iframe allow="join-ad-interest-group" data-tagging-id="G-7ZXEBRP6FQ" data-load-time="1723085965640" height="0" width="0" src="./Top 35 Git Commands With Examples - DZone_files/rul.html" style="display: none; visibility: hidden;"></iframe><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;" src="./Top 35 Git Commands With Examples - DZone_files/saved_resource(1).html"></iframe><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><iframe name="__tcfapiLocator" src="./Top 35 Git Commands With Examples - DZone_files/saved_resource(2).html" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="./Top 35 Git Commands With Examples - DZone_files/saved_resource(3).html" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="./Top 35 Git Commands With Examples - DZone_files/saved_resource(4).html" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><script type="text/javascript" async="" src="./Top 35 Git Commands With Examples - DZone_files/zi-tag.js.download"></script><script type="text/javascript" id="">var om56eecfe19c9dc,om56eecfe19c9dc_poll=function(){var b=0;return function(d,c){clearInterval(b);b=setInterval(d,c)}}();
+!function(b,d,c){if(b.getElementById(c))om56eecfe19c9dc_poll(function(){if(window.om_loaded&&!om56eecfe19c9dc)return om56eecfe19c9dc=new OptinMonsterApp,om56eecfe19c9dc.init({s:"16961.56eecfe19c9dc",staging:0,dev:0,beta:0})},25);else{var e=!1,a=b.createElement(d);a.id=c;a.src="//a.optnmstr.com/app/js/api.min.js";a.async=!0;a.onload=a.onreadystatechange=function(){if(!(e||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState))try{e=om_loaded=!0,om56eecfe19c9dc=new OptinMonsterApp,
+om56eecfe19c9dc.init({s:"16961.56eecfe19c9dc",staging:0,dev:0,beta:0}),a.onload=a.onreadystatechange=null}catch(f){}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(a)}}(document,"script","omapi-script");</script>
+
+<script type="text/javascript" id="">document.querySelectorAll('a[rel*\x3d"noreferrer"][href*\x3d"technologyadvice.com"]').forEach(function(a){var b=a.rel.split(" ");b.splice(b.indexOf("noreferrer"),1);a.rel=b.join(" ")});document.querySelectorAll('a[href*\x3d"technologyadvice.com"]').forEach(function(a){a.referrerPolicy="no-referrer-when-downgrade"});</script><script type="text/javascript" id="">!function(){try{window.setTimeout(function(){function a(){c||(c=!0,dataLayer.push({event:"userInteraction"}),d.forEach(function(b){window.removeEventListener(b,a,{once:!0,passive:!0})}))}var d=["mouseover","keydown","touchmove","touchstart","scroll"];d.forEach(function(b){window.addEventListener(b,a,{once:!0,passive:!0})});var c=!1},1E3)}catch(a){}}();</script><div id="om-hipk3iczmptk0wpuzbgh-holder"></div><iframe src="./Top 35 Git Commands With Examples - DZone_files/aframe.html" width="0" height="0" style="display: none;"></iframe><script type="text/javascript" charset="utf-8" async="" src="blob:https://dzone.com/9825a8db-41b6-488f-a67f-55c3005412ea"></script><iframe id="universal_pixel_5fjyxkv" height="0" width="0" style="display:none;" src="./Top 35 Git Commands With Examples - DZone_files/up.html" title="TTD Universal Pixel"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-7ZXEBRP6FQ" data-load-time="1723086163834" height="0" width="0" src="./Top 35 Git Commands With Examples - DZone_files/rul(1).html" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-7ZXEBRP6FQ" data-load-time="1723086929130" height="0" width="0" src="./Top 35 Git Commands With Examples - DZone_files/rul(2).html" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" id="">targetBottomStickyAd();</script></body><iframe name="goog_topics_frame" src="./Top 35 Git Commands With Examples - DZone_files/topics_frame.html" style="display: none;"></iframe></html>
